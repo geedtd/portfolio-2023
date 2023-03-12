@@ -2,7 +2,7 @@ import { OrbitControls } from "@react-three/drei";
 import {Perf} from 'r3f-perf'
 import {useLoader} from '@react-three/fiber'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
-import { DRACOLoader } from "three/examples/jsm/loaders/DRACOLoader";
+// import { DRACOLoader } from "three/examples/jsm/loaders/DRACOLoader";
 
 export default function Experience() {
         // const dracoLoader = new DRACOLoader()
@@ -33,5 +33,7 @@ export default function Experience() {
             <planeGeometry/>
             <meshStandardMaterial color='greenyellow' />
         </mesh>
+
+        <primitive object={model.scene} />
     </>
 }
