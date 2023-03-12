@@ -1,7 +1,27 @@
 import { OrbitControls } from "@react-three/drei";
 import {Perf} from 'r3f-perf'
+import {useLoader} from '@react-three/fiber'
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+import { DRACOLoader } from "three/examples/jsm/loaders/DRACOLoader";
 
 export default function Experience() {
+        // const dracoLoader = new DRACOLoader()
+        // dracoLoader.setDecoderConfig({type: 'js'})
+        // dracoLoader.setDecoderPath(
+        //     "https://www.gstatic.com/draco/v1/decoders/"
+        // );
+        const model = useLoader(
+            GLTFLoader,
+            "./PortfolioBlock.glb",
+            loader => {
+                dracoLoader.setDecoderPath(
+                    "https://www.gstatic.com/draco/v1/decoders/"
+                );
+                loader.setDRACOLoader(dracoLoader)
+            }
+        );
+        console.log(model);
+
     return <>
         <Perf position="top-left" />
         <OrbitControls makeDefault/>
