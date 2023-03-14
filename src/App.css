@@ -1,7 +1,7 @@
 #root {
   max-width: 2560px;
   margin: 0 auto;
-  padding: 2rem;
+  
   text-align: center;
 }
 
@@ -24,6 +24,47 @@
     animation: logo-spin infinite 20s linear;
   }
 }
+
+.floating-nav {
+  position: absolute;
+  z-index: 1000;
+  top: 80%;
+  left: 0;
+  right: 0;
+  margin-left: auto;  
+  margin-right: auto;
+  text-align: center;
+  transition: transform .3s;
+  
+}
+
+.floating-nav:hover {
+  transform: scale(1.5);
+}
+.btn {
+  background-color: #e3e1b3;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+}
+.side-button {
+  background-color: red;
+  border: 2px solid white;
+  border-radius: 22px;
+}
+
+.left {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+
 
 .card {
   padding: 2em;
