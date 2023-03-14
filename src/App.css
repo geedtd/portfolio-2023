@@ -26,6 +26,7 @@
 }
 
 .floating-nav {
+  white-space: nowrap;
   position: absolute;
   z-index: 1000;
   top: 80%;
@@ -53,15 +54,27 @@
     cursor: pointer;
     border-radius: 16px;
 }
+
+.middle-button {
+  border-radius: 0;
+  border: 2px solid white;
+  border-top-right-radius: 22px;
+  border-bottom-left-radius: 22px;
+}
 .side-button {
-  background-color: red;
+  
   border: 2px solid white;
   border-radius: 22px;
 }
 
 .left {
   border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
+  /* border-bottom-right-radius: 0; */
+}
+
+.right {
+  /* border-top-left-radius: 0; */
+  border-bottom-left-radius: 0;
 }
 
 

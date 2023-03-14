@@ -5,12 +5,8 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import { DRACOLoader } from "three/examples/jsm/loaders/DRACOLoader";
 
 
+
 export default function Experience() {
-        // const dracoLoader = new DRACOLoader()
-        // dracoLoader.setDecoderConfig({type: 'js'})
-        // dracoLoader.setDecoderPath(
-        //     "https://www.gstatic.com/draco/v1/decoders/"
-        // );
         const model = useLoader(
             GLTFLoader,
             "./PortfolioBlock.glb",
@@ -25,18 +21,15 @@ export default function Experience() {
         console.log(model);
         
 
-    return <>
-        <Perf position="top-left" />
-        <OrbitControls makeDefault/>
+    return (
+        <>
+            <Perf position="top-left" />
+            <OrbitControls makeDefault />
 
-        <directionalLight castShadow position={[0,10,10]} intensity={ 1.5 } />
-        <ambientLight intensity={0.6}/>
+            <directionalLight castShadow position={[0, 10, 10]} intensity={1.5} />
+            <ambientLight intensity={0.6} />
 
-        {/* <mesh receiveShadow position-y={ -1 } rotation-x={ - Math.PI * 0.5} scale={ 10 }>
-            <planeGeometry/>
-            <meshStandardMaterial color='greenyellow' />
-        </mesh> */}
-
-        <primitive object={model.scene} />
-    </>
+            <primitive object={model.scene} onClick={(e) => console.log("click")} />
+        </>
+    );
 }

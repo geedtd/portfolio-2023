@@ -20,6 +20,7 @@ function App() {
           far: 200,
           position: [-30, 15, -7]
         }
+        //change camera position based on state within Nav passed up, if not possible look into implementing solution with wouter
       }
     >
       <Experience />
