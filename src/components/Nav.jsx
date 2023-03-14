@@ -10,9 +10,17 @@ function Nav() {
 
     return (
         <div className="floating-nav">
-            <button className="btn side-button left"> {"<"} </button>
+            <button className="btn side-button left" onClick={() => setNav(nav - 1)}>
+            {"<"}
+            </button>
+
             <button className="btn middle-button">NAVIGATION</button>
-            <button className="btn side-button right">{">"} </button>
+            
+            <button 
+            className="btn side-button right" 
+            onClick={() => setNav(nav+1)}>
+            {">"}
+            </button>
         </div>
     );
 }
