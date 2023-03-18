@@ -11,23 +11,23 @@ function App() {
 
   return (
     <div className="App">
-    <Canvas
-      shadows
-      camera={
-        {
-          fov: 45,
-          near: 0.1, 
-          far: 200,
-          position: [-30, 15, -7]
+      <Canvas
+        shadows
+        camera={
+          {
+            fov: 45,
+            near: 0.1,
+            far: 200,
+            position: [-30, 15, -7],
+          }
+          //change camera position based on state within Nav passed up, if not possible look into implementing solution with wouter
         }
-        //change camera position based on state within Nav passed up, if not possible look into implementing solution with wouter
-      }
-    >
-      <Experience />
-    </Canvas>
-    <Nav />
+      >
+        <Experience onClick={() => alert("Hellooo")} />
+      </Canvas>
+      <Nav />
     </div>
-  )
+  );
 }
 
 export default App
