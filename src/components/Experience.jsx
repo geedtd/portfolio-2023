@@ -24,12 +24,12 @@ export default function Experience() {
     );
     console.log(model);
 
-    useFrame(({clock}) => {
-        const a = clock.getElapsedTime()/4
-        if (!active) {
-            myMesh.current.rotation.y = a
-        }
-    })
+    // useFrame(({clock}) => {
+    //     const a = clock.getElapsedTime()/4
+    //     if (!active) {
+    //         myMesh.current.rotation.y = a
+    //     }
+    // })
         
 
     return (
