@@ -22,14 +22,18 @@ export default function Experience() {
             loader.setDRACOLoader(dracoLoader)
         }
     );
-    console.log(model);
+    console.log(model.scenes[0].children[0].name);
 
-    // useFrame(({clock}) => {
-    //     const a = clock.getElapsedTime()/4
-    //     if (!active) {
-    //         myMesh.current.rotation.y = a
-    //     }
-    // })
+    let fanBlade = model.scenes[0].children[0];
+
+    // fanBlade.rotation.y = clock.getElapsedTime()/4
+    useFrame(({clock}) => {
+        const a = clock.getElapsedTime()
+        
+            fanBlade.rotation.y = a
+        
+    })
+
         
 
     return (
@@ -40,7 +44,9 @@ export default function Experience() {
             <directionalLight castShadow position={[0, 10, 10]} intensity={1.5} />
             <ambientLight intensity={0.6} />
 
-            <primitive object={model.scene} scale={active ? 1.5 : 1} onClick={() => setActive(!active)} ref={myMesh}/>
+            <primitive object={model.scene}  onClick={() => setActive(!active)} ref={myMesh}/>
         </>
     );
 }
+
+// scale={active ? 1.5 : 1}

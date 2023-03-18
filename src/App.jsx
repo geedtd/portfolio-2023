@@ -23,7 +23,7 @@ function App() {
           //change camera position based on state within Nav passed up, if not possible look into implementing solution with wouter
         }
       >
-        <Experience onClick={() => alert("Hellooo")} />
+        <Experience  />
       </Canvas>
       <Nav />
     </div>
