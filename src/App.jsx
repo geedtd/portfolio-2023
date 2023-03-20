@@ -27,9 +27,9 @@ function App() {
           //change camera position based on state within Nav passed up, if not possible look into implementing solution with wouter
         }
       >
-      <Suspense fallback={<Loader/>}>
+      {/* <Suspense fallback={<Loader/>}> */}
         <Experience  />
-      </Suspense>
+      {/* </Suspense> */}
       </Canvas>
       <Nav />
     </div>

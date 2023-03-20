@@ -23,15 +23,18 @@ export default function Experience() {
         }
     );
     console.log(model.scenes[0].children[0].name);
+    console.log(model.scenes[0].children[4].name);
+
 
     let fanBlade = model.scenes[0].children[0];
+    let girasol = model.scenes[0].children[4]
 
     // fanBlade.rotation.y = clock.getElapsedTime()/4
     useFrame(({clock}) => {
         const a = clock.getElapsedTime()
         
             fanBlade.rotation.y = a
-        
+            girasol.rotation.x = a
     })
 
         
