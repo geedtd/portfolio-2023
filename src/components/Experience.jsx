@@ -33,8 +33,8 @@ export default function Experience() {
     useFrame(({clock}) => {
         const a = clock.getElapsedTime()
         
-            fanBlade.rotation.y = a
-            girasol.rotation.x = a
+            fanBlade.rotation.y = a * 3
+            girasol.rotation.x = a *2
     })
 
         
