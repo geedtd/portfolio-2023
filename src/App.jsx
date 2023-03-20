@@ -2,8 +2,12 @@
 import './App.css'
 import Experience from './components/Experience'
 import Nav from './components/Nav'
+import Loader from './components/Loader'
+
 import { ReactDOM } from 'react-dom/client'
 import { Canvas } from '@react-three/fiber'
+import { Suspense } from 'react'
+
 
 
 function App() {
@@ -23,7 +27,9 @@ function App() {
           //change camera position based on state within Nav passed up, if not possible look into implementing solution with wouter
         }
       >
+      <Suspense fallback={<Loader/>}>
         <Experience  />
+      </Suspense>
       </Canvas>
       <Nav />
     </div>
