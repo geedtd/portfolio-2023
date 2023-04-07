@@ -19,6 +19,7 @@ function App() {
     <div className="App">
       <Canvas
         shadows
+        flat
         camera={
           {
             fov: 45,
@@ -34,7 +35,7 @@ function App() {
           <Experience  />
         {/* </Suspense> */}
       </Canvas>
-      <Nav />
+      {/* <Nav /> */}
     </div>
   );
 }

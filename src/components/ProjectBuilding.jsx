@@ -6,22 +6,69 @@ import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 
 export function ProjectBuilding(props) {
+
+    // const MeshTransmissionMaterialProps = JSX.IntrinsicElements['meshPhysicalMaterial'] & {
+    //     /* Transmission, default: 1 */
+    //     transmission?: number,
+    //     /* Thickness (refraction), default: 0 */
+    //     thickness?: number
+    //     /** Backside thickness (when backside is true), default: 0 */
+    //     backsideThickness?: number
+    //     /* Roughness (blur), default: 0 */
+    //     roughness?: number
+    //     /* Chromatic aberration, default: 0.03 */
+    //     chromaticAberration?: number
+    //     /* Anisotropy, default: 0.1 */
+    //     anisotropy?: number
+    //     /* Distortion, default: 0 */
+    //     distortion?: number
+    //     /* Distortion scale, default: 0.5 */
+    //     distortionScale: number
+    //     /* Temporal distortion (speed of movement), default: 0.0 */
+    //     temporalDistortion: number
+    //     /** The scene rendered into a texture (use it to share a texture between materials), default: null  */
+    //     buffer?: THREE.Texture
+    //     /** transmissionSampler, you can use the threejs transmission sampler texture that is
+    //      *  generated once for all transmissive materials. The upside is that it can be faster if you
+    //      *  use multiple MeshPhysical and Transmission materials, the downside is that transmissive materials
+    //      *  using this can't see other transparent or transmissive objects nor do you have control over the
+    //      *  buffer and its resolution, default: false */
+    //     transmissionSampler?: boolean
+    //     /** Render the backside of the material (more cost, better results), default: false */
+    //     backside?: boolean
+    //     /** Resolution of the local buffer, default: undefined (fullscreen) */
+    //     resolution?: number
+    //     /** Resolution of the local buffer for backfaces, default: undefined (fullscreen) */
+    //     backsideResolution?: number
+    //     /** Refraction samples, default: 6 */
+    //     samples?: number
+    //     /** Buffer scene background (can be a texture, a cubetexture or a color), default: null */
+    //     background?: THREE.Texture
+    //   }
+
     const { nodes, materials } = useGLTF("/projectBuilding.glb");
     return (
         <group {...props} dispose={null}>
-        <group position={[6.5, 1.32, 0]}>
-            <mesh
+        <group position={[7.1, 1.32, 0]}>
+            <mesh //frame
             castShadow
             receiveShadow
             geometry={nodes.Cube007.geometry}
             material={materials.ProjectBuildingMetal}
             />
-            <mesh
-            castShadow
-            receiveShadow
+            <mesh //glass
             geometry={nodes.Cube007_1.geometry}
-            material={materials.ProjectBuildingGlass}
-            />
+            
+            >
+                <meshPhysicalMaterial 
+                    color="skyblue"
+                    transmission={1}
+                    thickness={0.5}
+                    roughness={0}
+                    envMapIntensity={2}
+                    clearcoat={1}
+                />
+            </mesh>
         </group>
         </group>
     );
