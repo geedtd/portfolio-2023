@@ -6,6 +6,7 @@ import { DRACOLoader } from "three/examples/jsm/loaders/DRACOLoader";
 import React, { useState } from "react";
 import { Physics, RigidBody, CuboidCollider } from "@react-three/rapier";
 import { Model } from "./Portfolio";
+import { ProjectBuilding} from "./ProjectBuilding"
 
 
 
@@ -47,7 +48,7 @@ export default function Experience() {
 
             <Physics>    
                 <RigidBody type="fixed">
-
+                <ProjectBuilding />
                 <Model />
                 </RigidBody>
                 <RigidBody 
