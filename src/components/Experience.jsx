@@ -1,4 +1,4 @@
-import { OrbitControls } from "@react-three/drei";
+import { OrbitControls, Center } from "@react-three/drei";
 import {Perf} from 'r3f-perf'
 import {useLoader, useFrame} from '@react-three/fiber'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
@@ -42,7 +42,11 @@ export default function Experience() {
             <directionalLight castShadow position={[0, 10, 10]} intensity={1.5} />
             <ambientLight intensity={0.6} />
 
-            <primitive object={model.scene}  onClick={() => setActive(!active)} ref={myMesh}/>
+            M
+
+            <Center>
+                <primitive object={model.scene}  onClick={() => setActive(!active)} ref={myMesh}/>
+            </Center>
         </>
     );
 }
