@@ -3,6 +3,7 @@ import './App.css'
 import Experience from './components/Experience'
 import Nav from './components/Nav'
 import Loader from './components/Loader'
+import { Model } from './components/Portfolio'
 
 import { ReactDOM } from 'react-dom/client'
 import { Canvas } from '@react-three/fiber'

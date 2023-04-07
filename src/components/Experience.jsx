@@ -4,6 +4,8 @@ import {useLoader, useFrame} from '@react-three/fiber'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import { DRACOLoader } from "three/examples/jsm/loaders/DRACOLoader";
 import React, { useState } from "react";
+import { Physics, RigidBody, CuboidCollider } from "@react-three/rapier";
+import { Model } from "./Portfolio";
 
 
 
@@ -42,11 +44,46 @@ export default function Experience() {
             <directionalLight castShadow position={[0, 10, 10]} intensity={1.5} />
             <ambientLight intensity={0.6} />
 
-            M
 
-            <Center>
-                <primitive object={model.scene}  onClick={() => setActive(!active)} ref={myMesh}/>
-            </Center>
+            <Physics>    
+                <RigidBody type="fixed">
+
+                <Model />
+                </RigidBody>
+                <RigidBody 
+                    
+                    position={[ 1.5, 25, 0]} 
+                    gravityScale={1}
+                    restitution={ 0 }
+                    friction={ 0 }
+                    colliders={ false }
+                >
+                    <mesh castShadow >
+                        <boxGeometry />
+                        <meshStandardMaterial color="mediumpurple" />
+                    </mesh>
+                    <CuboidCollider mass={ 3 } args={ [0.5, 0.5, 0.5]} />
+                </RigidBody>
+                {/* <RigidBody 
+                    
+                    position={[ 1.5, 2, 0]} 
+                    gravityScale={1}
+                    restitution={ 0 }
+                    friction={ 0 }
+                    colliders={ false }
+                >
+                    <mesh castShadow >
+                        <boxGeometry />
+                        <meshStandardMaterial color="mediumpurple" />
+                    </mesh>
+                    <CuboidCollider mass={ 3 } args={ [0.5, 0.5, 0.5]} />
+                </RigidBody>
+
+                <Center>
+                    
+                    <primitive object={model.scene}  onClick={() => setActive(!active)} ref={myMesh}/>
+                </Center> */}
+            </Physics>
         </>
     );
 }
