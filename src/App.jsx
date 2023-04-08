@@ -22,13 +22,7 @@ function App() {
         {/* <Suspense fallback={<Loader/>}> */}
           <Experience  />
         {/* </Suspense> */}
-        <Sky 
-          distance={400}
-          sunPosition={[ 5,25,8]}
-          inclination={0}
-          azimuth={0.55}
-          
-        />
+        
       </Canvas>
       {/* <Nav /> */}
     </div>
