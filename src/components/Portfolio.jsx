@@ -20,7 +20,7 @@ export function Model(props) {
 
   const blade = useRef()
   return (
-    <group {...props} dispose={null}>
+    <group {...props} dispose={null} >
       <mesh
         ref={blade}
 
