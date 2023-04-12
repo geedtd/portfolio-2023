@@ -10,6 +10,7 @@ import { Physics, RigidBody, CuboidCollider } from "@react-three/rapier";
 import { Model } from "./Portfolio";
 import { ProjectBuilding} from "./ProjectBuilding"
 import ProjectsText from "./ProjectsText";
+import { NewBuilding } from "./NewBuilding";
 
 const Background = () => {
     const background = useRef()
@@ -88,8 +89,7 @@ export default function Experience() {
 
             <Physics>    
                 <RigidBody type="fixed">
-                <ProjectBuilding   />
-                <Model />
+                < NewBuilding />
                 </RigidBody>
                 <RigidBody 
                     

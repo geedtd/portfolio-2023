@@ -20,8 +20,8 @@ export default function ProjectsText() {
                 <Text3D
                     
                     font='/helvetiker_regular.typeface.json'
-                    position={[ 5, 5, 5]}
-                    rotation={[ 0, Math.PI * 0.5, 0 ]}
+                    position={[ -5, 5, -5]}
+                    rotation={[ 0, Math.PI * 1.5, 0 ]}
                     size={1.5}
                     height={0.15}
                     curveSegments={12}
