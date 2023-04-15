@@ -18,7 +18,7 @@ function App() {
         shadows
         flat 
       >
-        <PerspectiveCamera makeDefault  position={[-40, 15,-7]} maxPolarAngle={ Math.Pi * 0.5} />
+        <PerspectiveCamera makeDefault  position={[-49, 28,-12]} maxPolarAngle={ Math.Pi * 0.5} />
         {/* <Suspense fallback={<Loader/>}> */}
           <Experience  />
         {/* </Suspense> */}

@@ -11,6 +11,9 @@ import { Model } from "./Portfolio";
 import { ProjectBuilding} from "./ProjectBuilding"
 import ProjectsText from "./ProjectsText";
 import { NewBuilding } from "./NewBuilding";
+import { BrownstoneText } from "./BrownstoneText";
+import { Windows } from "./Windows";
+import { BrownstoneNW } from "./BrownstoneNW";
 
 const Background = () => {
     const background = useRef()
@@ -19,7 +22,7 @@ const Background = () => {
         background.current.rotation.x = 
         background.current.rotation.y =    
         background.current.rotation.z +=
-            delta * 0.2
+            delta * 0.05
     })
 
     return <>
@@ -27,9 +30,9 @@ const Background = () => {
             <sphereGeometry args={[1, 64, 64]} />   
             <LayerMaterial side={THREE.BackSide} >
                 <Depth 
-                    colorA="#fff000"
+                    colorA="blue"
                     colorB="aquamarine"
-                    alpha={1}
+                    alpha={0.75}
                     mode="normal"
                     near={130}
                     far={200}
@@ -42,7 +45,7 @@ const Background = () => {
                     colorA="white"
                     colorB="blue"
                     mode="subtract"
-                    alpha={0.2}
+                    alpha={0.05}
                 />
 
             </LayerMaterial>
@@ -71,8 +74,6 @@ export default function Experience() {
 
         }
     })
-
-    
     
     return (
         <>
@@ -86,10 +87,12 @@ export default function Experience() {
 
             <directionalLight castShadow position={[0, 10, 10]} intensity={1.5} />
             <ambientLight intensity={0.6} />
-
+            
+            <Center>
             <Physics>    
                 <RigidBody type="fixed">
-                < NewBuilding />
+                {/* < NewBuilding scale={3}/> */}
+                <BrownstoneNW />
                 </RigidBody>
                 <RigidBody 
                     
@@ -111,10 +114,11 @@ export default function Experience() {
                 </RigidBody>
 
             </Physics>
-            <ProjectsText />
+            <Windows />
+            
+            
             <Background />
+            </Center>
         </>
     );
 }
-
-// scale={active ? 1.5 : 1}

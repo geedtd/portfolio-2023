@@ -73,7 +73,7 @@ export function ProjectBuilding(props) {
             
             >
                 <meshPhysicalMaterial 
-                    color= {open ? "white" : "skyblue"}
+                    // color= {open ? "white" : "skyblue"}
                     transmission={1}
                     thickness={0.5}
                     roughness={0}
