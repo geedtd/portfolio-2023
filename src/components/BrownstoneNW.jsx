@@ -144,16 +144,25 @@ export function BrownstoneNW(props) {
         material={nodes.Curb_Corner.material}
         position={[-1.31316948, 0, -1.40416682]}
       />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Mailbox.geometry}
-        // material={nodes.Mailbox.material}
+      <group
         position={[-3.34961843, 0.54351866, 3.03920221]}
         scale={0.18400162}
+        >
+      <mesh
+        
+        geometry={nodes.Mailbox.geometry}
+        // material={nodes.Mailbox.material}
       >
-        <meshBasicMaterial color="blue"/>
+        <meshPhysicalMaterial 
+                    color="skyblue"
+                    transmission={1}
+                    thickness={0.5}
+                    roughness={0}
+                    // envMapIntensity={2}
+                    // clearcoat={1}
+                />
       </mesh>
+      </group>
       <mesh
         castShadow
         receiveShadow

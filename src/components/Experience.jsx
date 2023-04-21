@@ -1,4 +1,4 @@
-import { OrbitControls, Center } from "@react-three/drei";
+import { OrbitControls, Center,Environment } from "@react-three/drei";
 import {Perf} from 'r3f-perf'
 import {useLoader, useFrame} from '@react-three/fiber'
 import {Depth, LayerMaterial, Noise} from 'lamina'
@@ -14,6 +14,7 @@ import { NewBuilding } from "./NewBuilding";
 import { BrownstoneText } from "./BrownstoneText";
 import { Windows } from "./Windows";
 import { BrownstoneNW } from "./BrownstoneNW";
+import { StreetPole } from "./StreetPole";
 
 const Background = () => {
     const background = useRef()
@@ -77,6 +78,7 @@ export default function Experience() {
     
     return (
         <>
+            <Environment preset="city" />
             <Perf position="top-left" />
             <OrbitControls 
                 makeDefault
@@ -85,8 +87,8 @@ export default function Experience() {
                 autoRotateSpeed={0.5}
             />
 
-            <directionalLight castShadow position={[0, 10, 10]} intensity={1.5} />
-            <ambientLight intensity={0.6} />
+            {/* <directionalLight castShadow position={[0, 10, 10]} intensity={1.5} />
+            <ambientLight intensity={0.6} /> */}
             
             <Center>
             <Physics>    
@@ -114,9 +116,10 @@ export default function Experience() {
                 </RigidBody>
 
             </Physics>
-            <Windows />
+            {/* <Windows /> */}
             
-            
+            {/* <ProjectBuilding position={[-6,-1,1]} /> */}
+            <StreetPole />
             <Background />
             </Center>
         </>
