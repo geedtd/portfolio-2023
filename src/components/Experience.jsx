@@ -15,6 +15,7 @@ import { BrownstoneText } from "./BrownstoneText";
 import { Windows } from "./Windows";
 import { BrownstoneNW } from "./BrownstoneNW";
 import { StreetPole } from "./StreetPole";
+import {BrownstoneNew} from "./BrownstoneNew";
 
 const Background = () => {
     const background = useRef()
@@ -94,7 +95,7 @@ export default function Experience() {
             <Physics>    
                 <RigidBody type="fixed">
                 {/* < NewBuilding scale={3}/> */}
-                <BrownstoneNW />
+                <BrownstoneNew />
                 </RigidBody>
                 <RigidBody 
                     
