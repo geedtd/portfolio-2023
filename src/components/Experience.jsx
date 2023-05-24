@@ -122,6 +122,7 @@ export default function Experience() {
             {/* <ProjectBuilding position={[-6,-1,1]} /> */}
             <StreetPole />
             <Background />
+            <ProjectsText />
             </Center>
         </>
     );

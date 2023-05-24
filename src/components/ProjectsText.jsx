@@ -8,8 +8,8 @@ export default function ProjectsText() {
 
     useFrame(({clock}) => {
         const time = clock.getElapsedTime()
-        text.current.position.y = Math.cos(time)
-        text.current.position.x = Math.sin(time)
+        text.current.position.y = Math.cos(time)/2
+        text.current.position.x = Math.sin(time)/4
         
     })
     console.log(text.current);
@@ -20,19 +20,19 @@ export default function ProjectsText() {
                 <Text3D
                     
                     font='/helvetiker_regular.typeface.json'
-                    position={[ -15, 5, -5]}
+                    position={[ -3.3, 1.5, 2]}
                     rotation={[ 0, Math.PI * 1.5, 0 ]}
-                    size={1.5}
+                    size={.25}
                     height={0.15}
                     curveSegments={12}
                     bevelEnabled
                     bevelThickness={0.02}
                     bevelSize={0.02}
                     bevelOffset={0}
-                    bevelSegments={5}
-
+                    bevelSegments={3}
                 >
-                    Projects
+                    Contact {'\n'} Me
+                    <meshNormalMaterial />
                 </Text3D>
             </mesh>
         </group>
