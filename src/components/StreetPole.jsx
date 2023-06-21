@@ -16,9 +16,10 @@ const glowRed = new THREE.MeshBasicMaterial({ color: new THREE.Color(7, 0, 0.5),
 export function StreetPole(props) {
     const { nodes, materials } = useGLTF("/StreetPole.glb");
 
-    const walk = useRef();
+    const walk1 = useRef();
     const stop = useRef();
-
+    const walk2 = useRef();
+    const stop2 = useRef();
     
     return <>
 
@@ -88,18 +89,7 @@ export function StreetPole(props) {
             scale={0.24852459}
         />
         <mesh
-            ref={walk}
-            castShadow
-            receiveShadow
-            geometry={nodes.Walking_Body.geometry}
-            material={materials["Walking Blue"]}
-            position={[-1.73506916, 2.11856818, -5.40214205]}
-            rotation={[0, 0, -Math.PI / 2]}
-            scale={0.13533798}
-        >
-            {/* <meshStandardMaterial color={[ 4 , 1 , 2]} toneMapped={false} /> */}
-        </mesh>
-        <mesh
+        
             castShadow
             receiveShadow
             geometry={nodes.Text_200_OK.geometry}
@@ -107,7 +97,7 @@ export function StreetPole(props) {
             position={[-1.94712305, 3.19630909, -4.92874479]}
             rotation={[Math.PI / 2, 4e-8, -Math.PI]}
             scale={0.846026}
-        />
+        /> 
         <mesh
             castShadow
             receiveShadow
@@ -117,14 +107,26 @@ export function StreetPole(props) {
             rotation={[Math.PI / 2, 0, -0.00651629]}
             scale={[0.84602606, 0.84602606, 0.846026]}
         />
-        <mesh
-            castShadow
-            receiveShadow
-            geometry={nodes.Walking_Head.geometry}
-            material={materials["Walking Blue"]}
-            position={[-1.74411643, 2.30201936, -5.3987174]}
-            scale={[0.03004681, 0.00132183, 0.03004681]}
-        />
+        <group ref={walk1}>
+            <mesh
+                castShadow
+                receiveShadow
+                geometry={nodes.Walking_Body.geometry}
+                material={materials["Walking Blue"]}
+                position={[-1.73506916, 2.11856818, -5.40214205]}
+                rotation={[0, 0, -Math.PI / 2]}
+                scale={0.13533798}
+            >    
+            </mesh>
+            <mesh
+                castShadow
+                receiveShadow
+                geometry={nodes.Walking_Head.geometry}
+                material={materials["Walking Blue"]}
+                position={[-1.74411643, 2.30201936, -5.3987174]}
+                scale={[0.03004681, 0.00132183, 0.03004681]}
+            />
+        </group>
         <mesh
             castShadow
             receiveShadow
@@ -143,25 +145,26 @@ export function StreetPole(props) {
             rotation={[0, -Math.PI / 2, 0]}
             scale={0.24852459}
         />
-        <mesh
-            // ref={walk}
-            castShadow
-            receiveShadow
-            geometry={nodes.Walking_Body001.geometry}
-            material={materials["Walking Blue"]}
-            position={[-1.23949528, 2.6233201, -4.9567194]}
-            rotation={[Math.PI / 2, -Math.PI / 2, 0]}
-            scale={0.13533798}
-        />
-        <mesh
-            castShadow
-            receiveShadow
-            geometry={nodes.Walking_Head001.geometry}
-            material={materials["Walking Blue"]}
-            position={[-1.24291992, 2.80677128, -4.96576691]}
-            rotation={[0, -Math.PI / 2, 0]}
-            scale={[0.03004681, 0.00132183, 0.03004681]}
-        />
+        <group ref={walk2}>
+            <mesh
+                castShadow
+                receiveShadow
+                geometry={nodes.Walking_Body001.geometry}
+                material={materials["Walking Blue"]}
+                position={[-1.23949528, 2.6233201, -4.9567194]}
+                rotation={[Math.PI / 2, -Math.PI / 2, 0]}
+                scale={0.13533798}
+            />
+            <mesh
+                castShadow
+                receiveShadow
+                geometry={nodes.Walking_Head001.geometry}
+                material={materials["Walking Blue"]}
+                position={[-1.24291992, 2.80677128, -4.96576691]}
+                rotation={[0, -Math.PI / 2, 0]}
+                scale={[0.03004681, 0.00132183, 0.03004681]}
+            />
+        </group>
         <mesh
             castShadow
             receiveShadow

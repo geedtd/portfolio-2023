@@ -12,7 +12,7 @@ export default function ProjectsText() {
         text.current.position.x = Math.sin(time)/4
         
     })
-    console.log(text.current);
+    console.log(text.position);
 
     return <>
         <group ref={text} >    
@@ -23,10 +23,10 @@ export default function ProjectsText() {
                     position={[ -3.3, 1.5, 2]}
                     rotation={[ 0, Math.PI * 1.5, 0 ]}
                     size={.25}
-                    height={0.15}
+                    height={0.08}
                     curveSegments={12}
                     bevelEnabled
-                    bevelThickness={0.02}
+                    bevelThickness={0.01}
                     bevelSize={0.02}
                     bevelOffset={0}
                     bevelSegments={3}
