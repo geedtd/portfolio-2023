@@ -13,9 +13,9 @@ import ProjectsText from "./ProjectsText";
 import { NewBuilding } from "./NewBuilding";
 import { BrownstoneText } from "./BrownstoneText";
 import { Windows } from "./Windows";
-import { BrownstoneNW } from "./BrownstoneNW";
 import { StreetPole } from "./StreetPole";
 import {BrownstoneNew} from "./BrownstoneNew";
+import { AboutMeSign } from "./AboutMeSign";
 
 const Background = () => {
     const background = useRef()
@@ -120,6 +120,7 @@ export default function Experience() {
             {/* <Windows /> */}
             
             {/* <ProjectBuilding position={[-6,-1,1]} /> */}
+            <AboutMeSign />
             <StreetPole />
             <Background />
             <ProjectsText />
