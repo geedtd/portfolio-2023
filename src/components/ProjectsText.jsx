@@ -18,7 +18,7 @@ export default function ProjectsText() {
         <group ref={text} >    
             <mesh>
                 <Text3D
-                    
+                    onClick={() => console.log("Contact Me was clicked")}
                     font='/helvetiker_regular.typeface.json'
                     position={[ -3.3, 1.5, 2]}
                     rotation={[ 0, Math.PI * 1.5, 0 ]}
