@@ -120,10 +120,10 @@ export default function Experience() {
             {/* <Windows /> */}
             
             {/* <ProjectBuilding position={[-6,-1,1]} /> */}
+                <ProjectsText />
             <AboutMeSign />
             <StreetPole />
             <Background />
-            <ProjectsText />
             </Center>
         </>
     );

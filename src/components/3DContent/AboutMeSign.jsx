@@ -9,7 +9,7 @@ export function AboutMeSign(props) {
     return (
 
 <group 
-    position={[ -2.3, 5.5, -1]} 
+    position={[ -2.3, 6.5, -1]} 
     scale={0.5}
     rotation={[0,Math.PI * 1.5,0]}
     >

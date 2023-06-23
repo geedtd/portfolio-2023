@@ -12,13 +12,16 @@ export default function ProjectsText() {
         text.current.position.x = Math.sin(time)/4
         
     })
-    console.log(text.position);
+    
+
+    
+
 
     return <>
         <group ref={text} >    
             <mesh>
                 <Text3D
-                    onClick={() => console.log("Contact Me was clicked")}
+                    onClick={() => console.log(text)}
                     font='/Bebas_Neue_Regular.json'
                     position={[ -3.3, 1.5, 2]}
                     rotation={[ 0, Math.PI * 1.5, 0 ]}

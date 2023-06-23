@@ -17,7 +17,7 @@ function App() {
 
   return (
     <div className="App">
-      <div className="canvas" style={{height: '60vh'}}>
+      <div className="canvas" style={{height: '100vh'}}>
         <Canvas
           shadows
           flat 
@@ -32,7 +32,7 @@ function App() {
         </Canvas>
       </div>
 
-        <AboutMe />
+        {/* <AboutMe /> */}
         
     </div>
 
