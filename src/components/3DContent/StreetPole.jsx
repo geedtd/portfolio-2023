@@ -107,26 +107,6 @@ export function StreetPole(props) {
             rotation={[Math.PI / 2, 0, -0.00651629]}
             scale={[0.84602606, 0.84602606, 0.846026]}
         />
-        <group ref={walk1}>
-            <mesh
-                castShadow
-                receiveShadow
-                geometry={nodes.Walking_Body.geometry}
-                material={materials["Walking Blue"]}
-                position={[-1.73506916, 2.11856818, -5.40214205]}
-                rotation={[0, 0, -Math.PI / 2]}
-                scale={0.13533798}
-            >    
-            </mesh>
-            <mesh
-                castShadow
-                receiveShadow
-                geometry={nodes.Walking_Head.geometry}
-                material={materials["Walking Blue"]}
-                position={[-1.74411643, 2.30201936, -5.3987174]}
-                scale={[0.03004681, 0.00132183, 0.03004681]}
-            />
-        </group>
         <mesh
             castShadow
             receiveShadow
@@ -145,35 +125,6 @@ export function StreetPole(props) {
             rotation={[0, -Math.PI / 2, 0]}
             scale={0.24852459}
         />
-        <group ref={walk2}>
-            <mesh
-                castShadow
-                receiveShadow
-                geometry={nodes.Walking_Body001.geometry}
-                material={materials["Walking Blue"]}
-                position={[-1.23949528, 2.6233201, -4.9567194]}
-                rotation={[Math.PI / 2, -Math.PI / 2, 0]}
-                scale={0.13533798}
-            />
-            <mesh
-                castShadow
-                receiveShadow
-                geometry={nodes.Walking_Head001.geometry}
-                material={materials["Walking Blue"]}
-                position={[-1.24291992, 2.80677128, -4.96576691]}
-                rotation={[0, -Math.PI / 2, 0]}
-                scale={[0.03004681, 0.00132183, 0.03004681]}
-            />
-        </group>
-        <mesh
-            castShadow
-            receiveShadow
-            geometry={nodes.Walking_Hand.geometry}
-            material={glowRed}
-            position={[-1.8218534, 2.16488767, -5.31243992]}
-            rotation={[0, 0, -Math.PI / 2]}
-            scale={0.12551796}
-        />
         <mesh
             castShadow
             receiveShadow
@@ -183,15 +134,7 @@ export function StreetPole(props) {
             rotation={[Math.PI / 2, 0, Math.PI / 2]}
             scale={0.04347687}
         />
-        <mesh
-            castShadow
-            receiveShadow
-            geometry={nodes.Walking_Hand001.geometry}
-            material={glowRed}
-            position={[-1.32919741, 2.66963959, -5.04350376]}
-            rotation={[Math.PI / 2, -Math.PI / 2, 0]}
-            scale={0.12551796}
-        />
+        
         <mesh
             castShadow
             receiveShadow

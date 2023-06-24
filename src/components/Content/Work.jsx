@@ -4,19 +4,11 @@ import LandingExperience from "../3DContent/LandingExperience";
 import { PerspectiveCamera, Sky, Effects } from '@react-three/drei'
 
 
-export function AboutMe(props) {
+export function Work(props) {
 
     return(
         <>
-            <div className="about-me" style={{  display: 'flex', maxWidth: '90vw', minHeight: '40vh', background: 'white', color: 'black',  margin: '2vh auto', borderRadius: '20px'}}>
-                <div className="left-side" style={{ flex: 1, }}>
-                    <h2 className="title">
-                        About Me Testing Component
-                    </h2>
-                    <p>
-                        I am
-                    </p>
-                </div>
+            <div className="work" style={{  display: 'flex', maxWidth: '90vw', minHeight: '30vh', background: 'white', color: 'black',  margin: '2vh auto', borderRadius: '20px'}}>
                 <div className="right-side" style={{display: 'flex', justifyContent: 'center', borderRadius: '20px', flex: 1, padding: '10px', boxShadow: '0 8px 8px -4px black'}}>
                 <Canvas
                     shadows
@@ -29,9 +21,15 @@ export function AboutMe(props) {
                         <LandingExperience />
                 </Canvas>
                 </div>
+                <div className="left-side" style={{ flex: 1, }}>
+                    <h2 className="title">
+                        Work Testing Component
+                    </h2>
+                    <p>
+                        I am
+                    </p>
+                </div>
             </div>
         </>
     )
 }
-
-//style={{ width: '80vw'}}

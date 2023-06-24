@@ -4,14 +4,14 @@ import LandingExperience from "../3DContent/LandingExperience";
 import { PerspectiveCamera, Sky, Effects } from '@react-three/drei'
 
 
-export function AboutMe(props) {
+export function ContactMe(props) {
 
     return(
         <>
-            <div className="about-me" style={{  display: 'flex', maxWidth: '90vw', minHeight: '40vh', background: 'white', color: 'black',  margin: '2vh auto', borderRadius: '20px'}}>
+            <div className="contact-me" style={{  display: 'flex', maxWidth: '90vw', minHeight: '40vh', background: 'white', color: 'black',  margin: '2vh auto', borderRadius: '20px'}}>
                 <div className="left-side" style={{ flex: 1, }}>
                     <h2 className="title">
-                        About Me Testing Component
+                        Contact Me Testing Component
                     </h2>
                     <p>
                         I am
@@ -33,5 +33,3 @@ export function AboutMe(props) {
         </>
     )
 }
-
-//style={{ width: '80vw'}}

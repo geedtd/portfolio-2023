@@ -1,14 +1,16 @@
 
 import './App.css'
+import { Canvas, extend } from '@react-three/fiber'
 import Experience from './components/3DContent/Experience'
 import Nav from './components/3DContent/Nav'
 import { ReactDOM } from 'react-dom/client'
-import { Canvas, extend } from '@react-three/fiber'
 import { PerspectiveCamera, Sky, Effects } from '@react-three/drei'
 import { UnrealBloomPass } from 'three-stdlib'
 extend ({UnrealBloomPass})
 import { AboutMe } from './components/Content/AboutMe'
 import { Suspense } from 'react'
+import { Work } from './components/Content/Work'
+import { ContactMe } from './components/Content/ContactMe'
 
 
 
@@ -17,12 +19,13 @@ function App() {
 
   return (
     <div className="App">
-      <div className="canvas" style={{height: '100vh'}}>
+      <div className="canvas" style={{height: '70vh', width: '100vw'}}>
         <Canvas
           shadows
           flat 
+          
         >
-          <PerspectiveCamera makeDefault  position={[-49, 28,-12]} maxPolarAngle={ Math.Pi * 0.5} />
+          <PerspectiveCamera makeDefault  position={[-29, 18,-12]} maxPolarAngle={ Math.Pi * 0.5} />
           {/* <Suspense fallback={<Loader/>}> */}
             <Experience  />
           {/* </Suspense> */}
@@ -32,7 +35,10 @@ function App() {
         </Canvas>
       </div>
 
-        {/* <AboutMe /> */}
+        <AboutMe style={{display: 'flex', justifyContent: 'center',}}/>
+        <Work />
+        <ContactMe />
+        
         
     </div>
 

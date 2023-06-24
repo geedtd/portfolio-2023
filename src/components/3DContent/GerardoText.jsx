@@ -4,16 +4,16 @@ import { Physics, RigidBody, CuboidCollider } from "@react-three/rapier";
 
 import { useState, useRef } from 'react'
 
-export default function ProjectsText() {
+export default function GerardoText() {
 
     const text = useRef()
 
-    useFrame(({clock}) => {
-        const time = clock.getElapsedTime()
-        text.current.position.y = Math.cos(time)/2
-        text.current.position.x = Math.sin(time)/4
+    // useFrame(({clock}) => {
+    //     const time = clock.getElapsedTime()
+    //     text.current.position.y = Math.cos(time)/2
+    //     text.current.position.x = Math.sin(time)/4
         
-    })
+    // })
     
 
     
@@ -25,27 +25,28 @@ export default function ProjectsText() {
                 <Text3D
                     onClick={() => console.log(text)}
                     font='/Bebas_Neue_Regular.json'
-                    position={[ -3.3, 1.5, 2]}
+                    position={[ 0, 0, 0]}
                     rotation={[ 0, Math.PI * 1.5, 0 ]}
-                    size={.25}
+                    size={1}
                     height={0.08}
                     curveSegments={12}
                     bevelEnabled
                     bevelThickness={0.01}
-                    bevelSize={0.02}
+                    bevelSize={0.001}
                     bevelOffset={0}
                     bevelSegments={3}
                 >
-                    Contact {'\n'} Me
+                    GERARDO {'\n'} CAZARES
                     <meshNormalMaterial />
                 </Text3D>
             </mesh>
         </group>
-        <mesh position={[ -15,5.5,7]}>
-            <octahedronGeometry
-                
+        <mesh>
+            <planeGeometry
+                position={[ -1.3, 1.5, 2]}
+
             />
-            <meshStandardMaterial color="mediumpurple" />
         </mesh>
+        
     </>
 }

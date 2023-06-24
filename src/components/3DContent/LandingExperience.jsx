@@ -6,14 +6,7 @@ import * as THREE from 'three'
 
 import React, { useState, useRef } from "react";
 import { Physics, RigidBody, CuboidCollider } from "@react-three/rapier";
-
-import { Model } from "./Portfolio";
-import { ProjectBuilding} from "./ProjectBuilding"
-import ProjectsText from "./ProjectsText";
-import { StreetPole } from "./StreetPole";
-import {BrownstoneNew} from "./BrownstoneNew";
-import { AboutMeSign } from "./AboutMeSign";
-import { WalkSignsYang } from "./WalkSignsYang";
+import GerardoText from "./GerardoText";
 
 const Background = () => {
     const background = useRef()
@@ -55,7 +48,7 @@ const Background = () => {
     </>
 }
 
-export default function Experience() {
+export default function LandingExperience() {
     
     const cube = useRef()
     const [active, setActive] = useState(false)
@@ -85,17 +78,10 @@ export default function Experience() {
                 maxPolarAngle={Math.PI * 0.5}
                 autoRotate= { false }
                 autoRotateSpeed={0.5}
-            />
-
-            {/* <directionalLight castShadow position={[0, 10, 10]} intensity={1.5} />
-            <ambientLight intensity={0.6} /> */}
-            
+            />            
             <Center>
             <Physics>    
-                <RigidBody type="fixed">
-                {/* < NewBuilding scale={3}/> */}
-                <BrownstoneNew />
-                </RigidBody>
+                
 
                 <RigidBody  
                     position={[ 1.5, 25, 0]} 
@@ -115,15 +101,10 @@ export default function Experience() {
                 </RigidBody>
 
                 <RigidBody gravityScale={0}>
-                    <ProjectsText />
+                    <GerardoText />
                 </RigidBody>
             </Physics>
-            {/* <Windows /> */}
-            
-            {/* <ProjectBuilding position={[-6,-1,1]} /> */}
-            <AboutMeSign />
-            <StreetPole />
-            <WalkSignsYang/>
+        
             <Background />
             </Center>
         </>
