@@ -6,7 +6,7 @@ import './index.css'
 function Overlay() {
   return(
     <div>
-      <a href="https://www.linkedin.com/in/gerardocazares/" style={{ position: 'absolute', bottom: 40, left: 90, fontSize: '13px' }}>
+      <a href="https://www.linkedin.com/in/gerardocazares/" style={{ position: 'fixed', bottom: 40, left: 90, fontSize: '13px' }}>
         Gerardo Cazares
         <br />
         

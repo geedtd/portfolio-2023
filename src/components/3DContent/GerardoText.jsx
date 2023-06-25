@@ -31,7 +31,7 @@ export default function GerardoText() {
                     height={0.08}
                     curveSegments={12}
                     bevelEnabled
-                    bevelThickness={0.01}
+                    bevelThickness={0.05}
                     bevelSize={0.001}
                     bevelOffset={0}
                     bevelSegments={3}

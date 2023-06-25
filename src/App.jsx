@@ -19,7 +19,7 @@ function App() {
 
   return (
     <div className="App">
-      <div className="canvas" style={{height: '70vh', width: '100vw'}}>
+      <div className="canvas-bg" >
         <Canvas
           shadows
           flat 
