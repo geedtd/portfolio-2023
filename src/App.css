@@ -66,6 +66,19 @@
     border-radius: 16px;
 }
 
+.card {
+  padding: 2em;
+}
+
+.glass {
+  background: linear-gradient(135deg, rgba(254, 254, 254, 0.2 ), rgba(254, 254, 254, 0.0 ));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1.2px solid rgba(254, 254, 254, 0.25 );
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.35);
+}
+
 .middle-button {
   border-radius: 0;
   border: 2px solid white;
@@ -90,10 +103,5 @@
 
 
 
-.card {
-  padding: 2em;
-}
 
-.read-the-docs {
-  color: #888;
-}
+

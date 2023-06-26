@@ -11,6 +11,8 @@ import { AboutMe } from './components/Content/AboutMe'
 import { Suspense } from 'react'
 import { Work } from './components/Content/Work'
 import { ContactMe } from './components/Content/ContactMe'
+import LandingExperience from './components/3DContent/LandingExperience'
+import BackgroundLeva from './components/3DContent/BackgroundLeva'
 
 
 
@@ -27,7 +29,8 @@ function App() {
         >
           <PerspectiveCamera makeDefault  position={[-29, 18,-12]} maxPolarAngle={ Math.Pi * 0.5} />
           {/* <Suspense fallback={<Loader/>}> */}
-            <Experience  />
+            <BackgroundLeva />
+            <LandingExperience style={{zIndex: 1}}/>
           {/* </Suspense> */}
           {/* <Effects disableGamma>
             <unrealBloomPass threshold={1} strength={1.0} radius={0.5} />
@@ -36,7 +39,7 @@ function App() {
       </div>
 
         <AboutMe style={{display: 'flex', justifyContent: 'center',}}/>
-        <Work />
+        <Work className='glass'/>
         <ContactMe />
         
         

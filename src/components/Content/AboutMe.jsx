@@ -8,7 +8,7 @@ export function AboutMe(props) {
 
     return(
         <>
-            <div className="about-me" style={{  display: 'flex', maxWidth: '90vw', minHeight: '40vh', background: 'white', color: 'black',  margin: '2vh auto', borderRadius: '20px'}}>
+            <div className="about-me" style={{  display: 'flex', maxWidth: '90vw', minHeight: '40vh', background: 'white', color: 'black',  margin: '2vh auto', borderRadius: '20px', marginTop: '70vh'}}>
                 <div className="left-side" style={{ flex: 1, }}>
                     <h2 className="title">
                         About Me Testing Component
