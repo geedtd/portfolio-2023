@@ -6,7 +6,7 @@ import WorkExperience from "../3DContent/WorkExperience";
 
 export function Work(props) {
 
-    let skillsArr = ['JavaScript', 'Python', 'React', 'threeJS', 'R3F', 'Project Management', ' Fluent in English and Spanish', 'TypeScript', 'Custom Hooks', 'Git/Version Control',  'Third Party API Integration', 'REST API Creation', 'Node.js',  'MongoDB', 'HTML', 'CSS', 'SQL', 'Express', 'Django',  'Docker', 'AWS'  , 'WebGL', 'Blender',
+    let skillsArr = ['JavaScript', 'REST API Creation',  'React', 'threeJS', 'R3F', 'Project Management', ' Fluent in English and Spanish', 'TypeScript', 'Custom Hooks', 'Git/Version Control',  'Third Party API Integration', 'Python',  'Node.js',  'MongoDB', 'HTML', 'CSS', 'SQL', 'Express', 'Django',  'Docker', 'AWS'  , 'WebGL', 'Blender',
     ]
 
     return(

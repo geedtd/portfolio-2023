@@ -121,14 +121,18 @@
   border-radius: 20px;
 }
 
-.contact-me h2 {
+.contact-text {
+  margin: 5vw auto;
+}
+
+.contact-me .text {
   margin-top: 4vh;
   font-family: 'Rubik', sans-serif;
 }
 
 .contact-canvas {
   height: 40vh;
-  width: 80vw;
+  width: 50vw;
 }
 
 .content {
@@ -207,6 +211,17 @@
   border-radius: 22px;
 }
 
+.show {
+  background: linear-gradient(135deg, rgba(254, 254, 254, 0.2 ), rgba(254, 254, 254, 0.0 ));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1.2px solid rgba(254, 254, 254, 0.25 );
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.35);
+  color: black;
+  margin-bottom: 2vh;
+}
+
 .left {
   border-top-right-radius: 0;
   /* border-bottom-right-radius: 0; */
@@ -261,10 +276,10 @@ div .Typewriter {
 }
 
 .skills .skills-canvas {
-  height: 70%;
-  width: 60%;
-  top: -1vh;
-  right: 0;
+  height: 135%;
+    width: 89%;
+    top: 1vh;
+    right: -213px;
   z-index: 2;
 }
 
@@ -285,6 +300,10 @@ div .Typewriter {
 @media (max-width:1000px) {
   .contact-me {
     flex-direction: column;
+  }
+  .contact-canvas {
+    height: 40vh;
+    width: 80vw;
   }
   
   .landing {
@@ -315,6 +334,10 @@ div .Typewriter {
     top: -1vh;
     right: 0;
     z-index: 2;
+  }
+
+  .skill-list li {
+    font-size: 1.5;
   }
 }
 
