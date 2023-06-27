@@ -15,9 +15,10 @@ export default function WorkExperience() {
             />            
             <Center
                 rotation={[0,Math.PI/1.5, Math.PI * 2]}
-                position={[0, -0.5, 1.5]}
+                position={[0, -1.5, 1.5]}
+                scale={1.5}
             >
-                <StreetPole />
+                <StreetPole  />
                 <WalkSignsYang />
             </Center>
         </>

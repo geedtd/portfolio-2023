@@ -27,7 +27,7 @@ export function WalkSignsYang(props) {
             console.log(interval)
             console.log(walking)
 
-        }, 10000);
+        }, 5000);
 
         return () =>  clearInterval(interval);
     }, []);

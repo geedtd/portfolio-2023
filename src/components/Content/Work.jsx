@@ -6,13 +6,12 @@ import WorkExperience from "../3DContent/WorkExperience";
 
 export function Work(props) {
 
-    let skillsArr = ['JavaScript', 'Python', 'React', 'threeJS', 'R3F', 'WebGL', 'Blender', 'TypeScript', 'Custom Hooks', 'Git/Version Control', 'Node.js',  'MongoDB', 'HTML', 'CSS', 'SQL', 'Express', 'Django', 'REST API Creation', 'Third Party API Integration', 'Docker', 'AWS'  ,
-    'Project Management', ' Fluent in English and Spanish'
+    let skillsArr = ['JavaScript', 'Python', 'React', 'threeJS', 'R3F', 'Project Management', ' Fluent in English and Spanish', 'TypeScript', 'Custom Hooks', 'Git/Version Control',  'Third Party API Integration', 'REST API Creation', 'Node.js',  'MongoDB', 'HTML', 'CSS', 'SQL', 'Express', 'Django',  'Docker', 'AWS'  , 'WebGL', 'Blender',
     ]
 
     return(
         <>
-            <div className="skills glass-dark "   >
+            <div className="skills "   >
                 <div className="skills-canvas" style={{  borderRadius: '20px',  padding: '10px'}}>
                     <Canvas
                         shadows
@@ -23,18 +22,16 @@ export function Work(props) {
                             <WorkExperience />
                     </Canvas>
                 </div>
-                <div className="skills-text" >
+                <div className="skills-text glass-dark" >
                     <h2 className="title">
                         Skills
                     </h2>
                     <ul className="skill-list">
-                        {skillsArr.map((skill, index) => {
+                        {skillsArr.map((skill, index) => (
                             <li key={index}>{skill}</li>
-                        })}
+                        ))}
                     </ul>
-                    <li>
-                        React
-                    </li>
+                    
                 </div>
             </div>
         </>

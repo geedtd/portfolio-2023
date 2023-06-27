@@ -122,7 +122,7 @@
 }
 
 .content {
-  width: 85vw;
+  width: 90vw;
 }
 
 .footer {
@@ -221,36 +221,55 @@ div .Typewriter {
 
 .skills {
   font-family: 'Rubik';
-  display: flex;
-  max-width: 90vw;
-  min-height: 45vh;
+  display: inline-block;
+  min-width: 90vw;
+  min-height: 30vh;
   color: black;
-  margin: 2vh auto;
+  margin: 3vh auto;
   border-radius: 20px;
   position: relative;
+  margin-bottom: 25vh;
 }
 
 .skills .skills-text, .skills-canvas {
   position: absolute;
 }
 
-.skills .skills-text {
+.skills-text {
   text-align: left;
-  margin-left: 4vw;
-  margin-top: 4vh;
-  height: 100%;
-  width: 100%;
+  padding-top: 4vh;
+  padding-bottom: 5vh;
+  width: -webkit-fill-available;
+  margin: 4vh auto;
   top: 0;
   left: 0;
   z-index: 1;
 }
 
+.skills-text h2  {
+  padding-left: 4vw;
+}
+
 .skills .skills-canvas {
-  height: 120%;
-  width: 100%;
-  top: -10vh;
-  left: 0;
+  height: 70%;
+  width: 60%;
+  top: -1vh;
+  right: 0;
   z-index: 2;
+}
+
+.skill-list {
+  columns: 3;
+}
+
+.skill-list li {
+  font-size: 2vh;
+}
+
+@media (max-width: 1100px) {
+  .skill-list {
+    columns: 2;
+  }
 }
 
 @media (max-width:1000px) {
@@ -272,6 +291,17 @@ div .Typewriter {
     display: block;
   }
 
+  .skills {
+    height: 100%;
+    margin-bottom: 45vh;
+  }
+  .skills .skills-canvas {
+    height: 60%;
+    width: 50%;
+    top: -1vh;
+    right: 0;
+    z-index: 2;
+  }
 }
 
 
