@@ -13,7 +13,10 @@ export default function WorkExperience() {
                 maxPolarAngle={Math.PI * 0.5}
                 autoRotate= { false }
             />            
-            <Center>
+            <Center
+                rotation={[0,Math.PI/1.5, Math.PI * 2]}
+                position={[0, -0.5, 1.5]}
+            >
                 <StreetPole />
                 <WalkSignsYang />
             </Center>

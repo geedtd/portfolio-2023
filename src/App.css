@@ -22,7 +22,7 @@
 
 .canvas-name, .content {
   opacity: 0;
-  touch-action: none;
+  /* touch-action: none; */
   animation: fade-in 5s ease 1s forwards ;
 }
 
@@ -38,8 +38,22 @@
   min-height: 40vh;
   background: white;
   color: black;
-  margin: 7vh auto 4vh;
+  margin: 4vh auto 4vh;
   border-radius: 20px;
+}
+
+.about-me h2 {
+  font-family: 'Inter', sans-serif;
+  font-size: 4vh;
+  font-weight: 500;
+  margin: 3vh 3vw;
+}
+
+.about-me p {
+  font-family: 'Inter', sans-serif;
+  font-size: 2.2vh;
+  font-weight: 500;
+  margin: 4vh 6vw;
 }
 
 .canvas-bg {
@@ -205,13 +219,38 @@ div .Typewriter {
   
 }
 
-.work {
+.skills {
+  font-family: 'Rubik';
   display: flex;
   max-width: 90vw;
-  min-height: 30vh;
+  min-height: 45vh;
   color: black;
   margin: 2vh auto;
   border-radius: 20px;
+  position: relative;
+}
+
+.skills .skills-text, .skills-canvas {
+  position: absolute;
+}
+
+.skills .skills-text {
+  text-align: left;
+  margin-left: 4vw;
+  margin-top: 4vh;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.skills .skills-canvas {
+  height: 120%;
+  width: 100%;
+  top: -10vh;
+  left: 0;
+  z-index: 2;
 }
 
 @media (max-width:1000px) {
@@ -226,9 +265,12 @@ div .Typewriter {
   .right-landing {
     margin-top: 2vh;
     width: 90vw;
-    min-height: 35vh;
+    min-height: 40vh;
   }
   
+  .about-me {
+    display: block;
+  }
 
 }
 

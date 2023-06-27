@@ -6,26 +6,35 @@ import WorkExperience from "../3DContent/WorkExperience";
 
 export function Work(props) {
 
+    let skillsArr = ['JavaScript', 'Python', 'React', 'threeJS', 'R3F', 'WebGL', 'Blender', 'TypeScript', 'Custom Hooks', 'Git/Version Control', 'Node.js',  'MongoDB', 'HTML', 'CSS', 'SQL', 'Express', 'Django', 'REST API Creation', 'Third Party API Integration', 'Docker', 'AWS'  ,
+    'Project Management', ' Fluent in English and Spanish'
+    ]
+
     return(
         <>
-            <div className="glass-dark work"   >
-                <div className="right-side" style={{position: 'relative', top: '-3vh', left: '3vw', justifyContent: 'center', borderRadius: '20px', flex: 1, padding: '10px', boxShadow: '0 8px 8px -4px black'}}>
+            <div className="skills glass-dark "   >
+                <div className="skills-canvas" style={{  borderRadius: '20px',  padding: '10px'}}>
                     <Canvas
                         shadows
                         flat 
                         style={{borderRadius: '20px'}}
                     >
-                        <PerspectiveCamera makeDefault  position={[-2, 2,-1]} maxPolarAngle={ Math.Pi * 0.5} />
+                        {/* <PerspectiveCamera makeDefault  position={[-2, 2,-1]} maxPolarAngle={ Math.Pi * 0.5} /> */}
                             <WorkExperience />
                     </Canvas>
                 </div>
-                <div className="left-side" style={{ flex: 1, }}>
+                <div className="skills-text" >
                     <h2 className="title">
-                        Work Testing Component
+                        Skills
                     </h2>
-                    <p>
-                        I am
-                    </p>
+                    <ul className="skill-list">
+                        {skillsArr.map((skill, index) => {
+                            <li key={index}>{skill}</li>
+                        })}
+                    </ul>
+                    <li>
+                        React
+                    </li>
                 </div>
             </div>
         </>

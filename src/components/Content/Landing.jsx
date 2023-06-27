@@ -27,7 +27,7 @@ export function Landing(props) {
                     
                     <Typewriter
                         options={{
-                            strings: ['Software Engineer','Web Developer', 'Creative Developer', 'Cat Dad', 'Full-Stack Developer', 'Someone That Wants To' ],
+                            strings: ['Software Engineer','Web Developer', 'Creative Developer', 'Cat Dad', 'Full-Stack Developer', 'Lifelong Learner' ],
                             autoStart: true,
                             loop: true,
                             pauseFor: 2500,
