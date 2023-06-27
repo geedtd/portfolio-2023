@@ -58,7 +58,7 @@ export default function LandingExperience() {
 
                 <RigidBody 
                 gravityScale={0.0}
-                position={[4.5, 1, -2]}
+                // position={[4.5, 1, -2]}
                 
                 >
                     <GerardoText />

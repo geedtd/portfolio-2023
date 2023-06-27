@@ -6,6 +6,7 @@ import { useState, useRef } from 'react'
 
 export default function GerardoText() {
 
+    const [size, setSize] = useState(1.8)
     const text = useRef()
 
     useFrame(({clock}) => {
@@ -15,19 +16,15 @@ export default function GerardoText() {
         
     })
     
-
-    
-
-
     return <>
         <group ref={text} >    
             <mesh>
                 <Text3D
                     onClick={() => console.log(text)}
                     font='/Bebas_Neue_Regular.json'
-                    position={[ 0, 0, 0]}
-                    rotation={[ 0, Math.PI * 1.5, 0 ]}
-                    size={1.2}
+                    position={[ 1, 0, 0]}
+                    rotation={[ 0, Math.PI * 2.1, 0 ]}
+                    size={size}
                     height={.16}
                     curveSegments={12}
                     bevelEnabled

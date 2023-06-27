@@ -13,8 +13,8 @@ export function Mailbox(props) {
                 geometry={nodes.Mailbox.geometry}
                 material={materials.Mailbox}
                 position={[-3.34961843, 0.54351866, 3.03920221]}
-                
-                scale={0.18400162}
+                rotation={[ 0, Math.PI / 2 , 0]}
+                scale={0.24400162}
             />
         </group>
     );

@@ -8,7 +8,7 @@ export function Work(props) {
 
     return(
         <>
-            <div className="glass work"   >
+            <div className="glass-dark work"   >
                 <div className="right-side" style={{position: 'relative', top: '-3vh', left: '3vw', justifyContent: 'center', borderRadius: '20px', flex: 1, padding: '10px', boxShadow: '0 8px 8px -4px black'}}>
                     <Canvas
                         shadows
