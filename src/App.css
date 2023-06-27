@@ -128,27 +128,16 @@
 }
 
 .right-landing {
+  margin-top: 5vh;
   width: 35vw;
-  border: 1px solid black
+  border: 1px solid black;
+  
 }
 
 .right-landing h2,p {
   color: black;
 }
 
-@media (max-width:1000px) {
-  .landing {
-    display: block;
-  }
-
-  .left-landing {
-    width: 90vw;
-    height: 60vh;
-  }
-  .right-landing {
-    width: 90vw;
-  }
-}
 
 .middle-button {
   border-radius: 0;
@@ -172,6 +161,22 @@
   border-bottom-left-radius: 0;
 }
 
+div .Typewriter {
+  margin-bottom: 0;
+}
+
+.typewriter {
+  color: black;
+  font-size: 10vh;
+  
+}
+
+.typewriter-cursor {
+  font-size: 8vh;
+  font-style:oblique;
+  color: black;
+}
+
 .work {
   display: flex;
   max-width: 90vw;
@@ -181,6 +186,22 @@
   border-radius: 20px;
 }
 
+@media (max-width:1000px) {
+  .landing {
+    display: block;
+  }
+
+  .left-landing {
+    width: 90vw;
+    height: 60vh;
+  }
+  .right-landing {
+    width: 90vw;
+    min-height: 55vh;
+  }
+  
+
+}
 
 
 

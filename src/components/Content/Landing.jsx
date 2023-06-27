@@ -6,9 +6,11 @@ import { PerspectiveCamera, Sky, Effects } from '@react-three/drei'
 import LandingTemp from "../3DContent/LandingTemp";
 import LandingExperience from "../3DContent/LandingExperience";
 
-
+import Typewriter from 'typewriter-effect';
 
 export function Landing(props) {
+
+    let typeContent = ['Web Developer', 'Creative Developer',]
 
     return(
         <>
@@ -27,11 +29,21 @@ export function Landing(props) {
                 </div>
                 <div className="right-landing" >
                     <h2 className="title">
-                        Landing
+                        Hey thanks for checking me out! <br /> I am a ... 
                     </h2>
-                    <p>
-                        I am
-                    </p>
+                    
+                    <Typewriter
+                        options={{
+                            strings: ['Web Developer', 'Creative Developer', 'Cat Dad'],
+                            autoStart: true,
+                            loop: true,
+                            pauseFor: 2500,
+                            wrapperClassName: 'typewriter',
+                            cursor: '',
+                            cursorClassName: 'typewriter-cursor',
+                            
+                        }}
+                    />
                 </div>
             </div>
         </>
