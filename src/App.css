@@ -116,11 +116,12 @@
 }
 
 .landing {
-  margin-top: 10vh;
+  margin-top: 5vh;
   border: 1px solid black;
   display: flex;
   min-height: 60vh;
 }
+
 
 .left-landing{
   width: 55vw;
@@ -129,6 +130,24 @@
 .right-landing {
   width: 35vw;
   border: 1px solid black
+}
+
+.right-landing h2,p {
+  color: black;
+}
+
+@media (max-width:1000px) {
+  .landing {
+    display: block;
+  }
+
+  .left-landing {
+    width: 90vw;
+    height: 60vh;
+  }
+  .right-landing {
+    width: 90vw;
+  }
 }
 
 .middle-button {

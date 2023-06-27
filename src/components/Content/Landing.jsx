@@ -7,6 +7,7 @@ import LandingTemp from "../3DContent/LandingTemp";
 import LandingExperience from "../3DContent/LandingExperience";
 
 
+
 export function Landing(props) {
 
     return(
@@ -19,7 +20,7 @@ export function Landing(props) {
                     flat 
                     style={{borderRadius: '20px'}}
                 >
-                    <PerspectiveCamera makeDefault  position={[-3, 2,-1]} maxPolarAngle={ Math.Pi * 0.5} />
+                    {/* <PerspectiveCamera makeDefault  position={[-3, 2,-1]} maxPolarAngle={ Math.Pi * 0.5} /> */}
                     {/* <Suspense fallback={<Loader/>}> */}
                     <LandingExperience />
                 </Canvas>
