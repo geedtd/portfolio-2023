@@ -1,6 +1,5 @@
 import React from "react";
 import { Canvas, extend } from '@react-three/fiber'
-import LandingExperience from "../3DContent/LandingExperience";
 import { PerspectiveCamera, Sky, Effects } from '@react-three/drei'
 import MailboxExperience from "../3DContent/MailboxExperience";
 
@@ -9,17 +8,18 @@ export function ContactMe(props) {
 
     return(
         <>
-            <div className="contact-me glass" >
-                <div className="left-side" style={{ flex: 1, }}>
+            <div className="contact-me glass-dark" >
+                {/* left side */}
+                <div className="text-canvas" > 
                     
-                    <h1 className="title">
+                    <h2 className="title">
                         Contact Me 
-                    </h1>
+                    </h2>
                     <p>
                         I am
                     </p>
                 </div>
-                <div className="right-side" style={{position: 'relative', top: '3vh', left: '3vw', borderRadius: '20px', flex: 1, padding: '10px', }}>
+                <div className="contact-canvas" >
                 <Canvas
                     shadows
                     flat 

@@ -1,5 +1,5 @@
 import { OrbitControls, Center,Environment } from "@react-three/drei";
-import {Perf} from 'r3f-perf'
+// import {Perf} from 'r3f-perf'
 import React, { useState, useRef } from "react";
 import { Physics, RigidBody, CuboidCollider } from "@react-three/rapier";
 import GerardoText from "./GerardoText";
@@ -28,7 +28,7 @@ export default function LandingExperience() {
     return (
         <>
             <Environment files="potsdamer_platz_1k.hdr" />
-            <Perf position="top-left" />
+            {/* <Perf position="top-left" /> */}
             <OrbitControls 
                 makeDefault
                 maxPolarAngle={Math.PI * 0.5}

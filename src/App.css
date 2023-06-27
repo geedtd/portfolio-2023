@@ -121,6 +121,16 @@
   border-radius: 20px;
 }
 
+.contact-me h2 {
+  margin-top: 4vh;
+  font-family: 'Rubik', sans-serif;
+}
+
+.contact-canvas {
+  height: 40vh;
+  width: 80vw;
+}
+
 .content {
   width: 90vw;
 }
@@ -273,6 +283,10 @@ div .Typewriter {
 }
 
 @media (max-width:1000px) {
+  .contact-me {
+    flex-direction: column;
+  }
+  
   .landing {
     display: block;
   }
@@ -293,11 +307,11 @@ div .Typewriter {
 
   .skills {
     height: 100%;
-    margin-bottom: 45vh;
+    margin-bottom: 35vh;
   }
   .skills .skills-canvas {
     height: 60%;
-    width: 50%;
+    width: 57%;
     top: -1vh;
     right: 0;
     z-index: 2;
