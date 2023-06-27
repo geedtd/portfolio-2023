@@ -2,13 +2,15 @@ import React from "react";
 import { Canvas, extend } from '@react-three/fiber'
 import LandingExperience from "../3DContent/LandingExperience";
 import { PerspectiveCamera, Sky, Effects } from '@react-three/drei'
+import LandingTemp from "../3DContent/LandingTemp";
 
 
 export function AboutMe(props) {
 
     return(
         <>
-            <div className="about-me" style={{  display: 'flex', maxWidth: '90vw', minHeight: '40vh', background: 'white', color: 'black',  margin: '2vh auto', borderRadius: '20px', marginTop: '70vh'}}>
+            
+            <div className="about-me glass" >
                 <div className="left-side" style={{ flex: 1, }}>
                     <h2 className="title">
                         About Me Testing Component
@@ -22,11 +24,10 @@ export function AboutMe(props) {
                     shadows
                     flat 
                     style={{borderRadius: '20px'}}
-
                 >
                     <PerspectiveCamera makeDefault  position={[-2, 2,-1]} maxPolarAngle={ Math.Pi * 0.5} />
                     {/* <Suspense fallback={<Loader/>}> */}
-                        <LandingExperience />
+                    <LandingTemp />
                 </Canvas>
                 </div>
             </div>

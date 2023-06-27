@@ -32,27 +32,8 @@ export function WalkSignsYang(props) {
         return () =>  clearInterval(interval);
     }, []);
 
-
     const walk1 = useRef();
     const walk2 = useRef();
-
-    // useFrame(({clock}) => {
-    //     let time =+ clock.getElapsedTime()
-    //     // console.log(time)
-    //     if (time === 8 ) {
-    //         setWalking(!walking)
-    //         // console.log('greater than')
-            
-
-    //     }
-    // })
-
-        {/* <EffectComposer multisampling={0}>
-            <Bloom 
-                // mipmapBlur
-                intensity={0.2}
-            />
-        </EffectComposer> */}
     
     return (walking ?
         <>

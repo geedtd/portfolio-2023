@@ -1,5 +1,4 @@
 import { OrbitControls, Center,Environment } from "@react-three/drei";
-import {Perf} from 'r3f-perf'
 import {useFrame} from '@react-three/fiber'
 import {Depth, LayerMaterial, Noise} from 'lamina'
 import * as THREE from 'three'
@@ -38,7 +37,6 @@ const Background = () => {
                     mode="subtract"
                     alpha={0.05}
                 />
-
             </LayerMaterial>
             
         </mesh>
@@ -48,20 +46,11 @@ const Background = () => {
 
 export default function BackgroundLeva() {
 
-    useFrame(({clock}) => {
-        const time =+ clock.getElapsedTime()
-        // console.log(time)
-        if (time > 8 ) {
-            cubeJump()
-            
-
-        }
-    })
     
     return (
         <>
             <Environment files="potsdamer_platz_1k.hdr" />
-            <Perf position="top-left" />
+            
             <OrbitControls 
                 makeDefault
                 maxPolarAngle={Math.PI * 0.5}

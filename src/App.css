@@ -8,9 +8,8 @@
 
 .App {
   width: 100%;
-  height: 100%;
+  height: 100;
 }
-
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
@@ -24,6 +23,16 @@
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;
   }
+}
+
+.about-me {
+  display: flex;
+  max-width: 90vw;
+  min-height: 40vh;
+  background: white;
+  color: black;
+  margin: 7vh auto 4vh;
+  border-radius: 20px;
 }
 
 .canvas-bg {
@@ -53,6 +62,9 @@
 .floating-nav:hover {
   transform: scale(1.5);
 }
+
+/* CUSTOM STARTS HERE */
+
 .btn {
   background-color: #e3e1b3;
     border: none;
@@ -70,6 +82,30 @@
   padding: 2em;
 }
 
+.contact-me {
+  display: flex;
+  max-width: 90vw;
+  min-height: 40vh;
+  color: black;
+  margin: 5vh auto 7vh;
+  border-radius: 20px;
+}
+
+.content {
+  width: 85vw;
+}
+
+.footer {
+  display: inline-flex;
+  color: black;
+  padding: 1vw;
+}
+
+.footer p {
+  padding: 1vw;
+  font-size: large;
+}
+
 .glass {
   background: linear-gradient(135deg, rgba(254, 254, 254, 0.2 ), rgba(254, 254, 254, 0.0 ));
   backdrop-filter: blur(10px);
@@ -77,6 +113,22 @@
   border-radius: 20px;
   border: 1.2px solid rgba(254, 254, 254, 0.25 );
   box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.35);
+}
+
+.landing {
+  margin-top: 10vh;
+  border: 1px solid black;
+  display: flex;
+  min-height: 60vh;
+}
+
+.left-landing{
+  width: 55vw;
+}
+
+.right-landing {
+  width: 35vw;
+  border: 1px solid black
 }
 
 .middle-button {
@@ -99,6 +151,15 @@
 .right {
   /* border-top-left-radius: 0; */
   border-bottom-left-radius: 0;
+}
+
+.work {
+  display: flex;
+  max-width: 90vw;
+  min-height: 30vh;
+  color: black;
+  margin: 2vh auto;
+  border-radius: 20px;
 }
 
 

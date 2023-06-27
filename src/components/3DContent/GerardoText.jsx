@@ -8,12 +8,12 @@ export default function GerardoText() {
 
     const text = useRef()
 
-    // useFrame(({clock}) => {
-    //     const time = clock.getElapsedTime()
-    //     text.current.position.y = Math.cos(time)/2
-    //     text.current.position.x = Math.sin(time)/4
+    useFrame(({clock}) => {
+        const time = clock.getElapsedTime()
+        text.current.position.y = Math.cos(time)/4
+        text.current.position.x = Math.sin(time)/8
         
-    // })
+    })
     
 
     
@@ -27,14 +27,14 @@ export default function GerardoText() {
                     font='/Bebas_Neue_Regular.json'
                     position={[ 0, 0, 0]}
                     rotation={[ 0, Math.PI * 1.5, 0 ]}
-                    size={1}
-                    height={0.08}
+                    size={1.2}
+                    height={.16}
                     curveSegments={12}
                     bevelEnabled
                     bevelThickness={0.05}
                     bevelSize={0.001}
-                    bevelOffset={0}
-                    bevelSegments={3}
+                    bevelOffset={0.0}
+                    bevelSegments={2}
                 >
                     GERARDO {'\n'} CAZARES
                     <meshNormalMaterial />
