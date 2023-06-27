@@ -18,6 +18,6 @@ function Overlay() {
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <App />
-    <Overlay />
+    {/* <Overlay /> */}
   </React.StrictMode>,
 )

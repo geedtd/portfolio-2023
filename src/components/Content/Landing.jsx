@@ -22,7 +22,7 @@ export function Landing(props) {
                 </div>
                 <div className="right-landing" >
                     <h2 className="title">
-                        Hey thanks for checking me out! <br /> I am a ... 
+                        Welcome to my Portfolio  <br /> I am a ... 
                     </h2>
                     
                     <Typewriter

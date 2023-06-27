@@ -16,7 +16,7 @@ export function Work(props) {
                     <Canvas
                         shadows
                         flat 
-                        style={{borderRadius: '20px'}}
+                        style={{borderRadius: '20px', pointerEvents: 'none'}}
                     >
                         {/* <PerspectiveCamera makeDefault  position={[-2, 2,-1]} maxPolarAngle={ Math.Pi * 0.5} /> */}
                             <WorkExperience />
