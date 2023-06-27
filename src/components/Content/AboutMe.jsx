@@ -9,14 +9,13 @@ export function AboutMe(props) {
 
     return(
         <>
-            
             <div className="about-me glass" >
                 <div className="left-side" style={{ flex: 1, }}>
                     <h2 className="title">
-                        About Me Testing Component
+                        About Me 
                     </h2>
                     <p>
-                        I am
+                    Hello! I'm Gerardo Cazares, a passionate web developer with a knack for incorporating captivating 3D elements into web design. With a background in hospitality and a strong curiosity to uncover how things work, I bring a unique perspective to my development projects.
                     </p>
                 </div>
                 <div className="right-side" style={{display: 'flex', justifyContent: 'center', borderRadius: '20px', flex: 1, padding: '10px', boxShadow: '0 8px 8px -4px black'}}>

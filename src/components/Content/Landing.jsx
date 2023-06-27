@@ -1,29 +1,22 @@
 import React from "react";
 import { Canvas, extend } from '@react-three/fiber'
-// import LandingExperience from "../3DContent/LandingExperience";
-import GerardoText from "../3DContent/GerardoText";
-import { PerspectiveCamera, Sky, Effects } from '@react-three/drei'
-import LandingTemp from "../3DContent/LandingTemp";
 import LandingExperience from "../3DContent/LandingExperience";
 
 import Typewriter from 'typewriter-effect';
 
 export function Landing(props) {
 
-    let typeContent = ['Web Developer', 'Creative Developer',]
-
     return(
         <>
             
-            <div className="landing glass" >
+            <div className="landing clear" >
                 <div className="left-landing" >
                 <Canvas
                     shadows
                     flat 
                     style={{borderRadius: '20px'}}
+                    className="canvas-name"
                 >
-                    {/* <PerspectiveCamera makeDefault  position={[-3, 2,-1]} maxPolarAngle={ Math.Pi * 0.5} /> */}
-                    {/* <Suspense fallback={<Loader/>}> */}
                     <LandingExperience />
                 </Canvas>
                 </div>
@@ -34,10 +27,11 @@ export function Landing(props) {
                     
                     <Typewriter
                         options={{
-                            strings: ['Software Engineer','Web Developer', 'Creative Developer', 'Cat Dad', 'Full-Stack Developer' ],
+                            strings: ['Software Engineer','Web Developer', 'Creative Developer', 'Cat Dad', 'Full-Stack Developer', 'Someone That Wants To' ],
                             autoStart: true,
                             loop: true,
                             pauseFor: 2500,
+                            deleteSpeed: 100,
                             wrapperClassName: 'typewriter',
                             cursor: '',
                             cursorClassName: 'typewriter-cursor',

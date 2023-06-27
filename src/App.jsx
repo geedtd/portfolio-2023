@@ -40,7 +40,7 @@ function App() {
           </Canvas>
         </div>
       <div className="landing">        
-       <Landing />
+        <Landing />
       </div>
       <div className='content'>
         <AboutMe style={{display: 'flex', justifyContent: 'center',}}/>
