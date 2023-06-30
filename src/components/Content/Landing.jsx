@@ -1,6 +1,7 @@
 import React from "react";
 import { Canvas, extend } from '@react-three/fiber'
 import LandingExperience from "../3DContent/LandingExperience";
+import LandingPLanet from '../3DContent/LandingPlanet'
 
 import Typewriter from 'typewriter-effect';
 
@@ -17,7 +18,7 @@ export function Landing(props) {
                     style={{borderRadius: '20px'}}
                     className="canvas-name"
                 >
-                    <LandingExperience />
+                    <LandingPLanet />
                 </Canvas>
                 </div>
                 <div className="right-landing" >
