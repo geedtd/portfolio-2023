@@ -4,8 +4,9 @@ import React, { useState, useRef } from "react";
 import { Physics, RigidBody, CuboidCollider } from "@react-three/rapier";
 import { DevPlanet } from "./DevPlanet";
 
-export default function LandingExperience() {
+export default function LandingExperience(props) {
     
+    console.log(props)
     
     return (
         <>
@@ -16,8 +17,26 @@ export default function LandingExperience() {
                 autoRotate= { false }
                 autoRotateSpeed={0.5}
             />            
-            <Center>
+                    <Center>
                 <Physics>    
+                    
+                    <RigidBody  
+                    position={[ 4.5, 0, 0]} 
+                    gravityScale={0.1}
+                    restitution={ 0 }
+                    friction={ 0 }
+                    colliders={ false }
+                    // ref={cube}
+                    >
+                    <mesh 
+                        castShadow
+                        >
+                        <boxGeometry />
+                        <meshStandardMaterial color="red" />
+                    </mesh>
+                    <CuboidCollider mass={ 30 } args={ [0.5, 0.5, 0.5]} />
+                </RigidBody>
+
                     <RigidBody 
                     gravityScale={0.0}
                     // position={[4.5, 1, -2]}

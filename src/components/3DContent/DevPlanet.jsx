@@ -10,35 +10,41 @@ export function DevPlanet(props) {
 
     const name = useRef()
     const roles = useRef()
+    const orb = useRef()
 
     useFrame(({clock}) => {
         const time = clock.getElapsedTime()
         name.current.rotation.y = (time)/6
-        name.current.position.x = Math.sin(time)/8
+        // name.current.position.x = Math.sin(time)/8
         roles.current.rotation.y = (time)/8
         // roles.current.position.x = Math.sin(time)/8
         
     })
+    console.log(orb)
 
     const { nodes, materials } = useGLTF("/DevPlanet.glb");
     return (
         <group {...props} dispose={null}>
         <mesh
+            ref={orb}
             castShadow
             receiveShadow
             geometry={nodes.Sphere.geometry}
             material={nodes.Sphere.material}
-        />
+        >
+            <meshBasicMaterial color={'purple'} wireframe/>
+            </mesh>
         <mesh
             ref={name}
-
             castShadow
             receiveShadow
             geometry={nodes.Text.geometry}
             material={nodes.Text.material}
-            rotation={[-2.9061, 0, 0]}
-            scale={0.533}
-        />
+            rotation={[-2.9061, Math.PI/3 , -0.1]}
+            scale={0.483}
+        >
+            <meshNormalMaterial/>
+            </mesh>
         <mesh
             ref={roles}
             castShadow
@@ -47,7 +53,9 @@ export function DevPlanet(props) {
             material={nodes.Text001.material}
             rotation={[2.8, 0, 0]}
             scale={0.294}
-        />
+        >
+            <meshBasicMaterial color={'blue'}/>
+            </mesh>
         </group>
     );
     }

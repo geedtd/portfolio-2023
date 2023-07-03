@@ -7,6 +7,8 @@ import Typewriter from 'typewriter-effect';
 
 export function Landing(props) {
 
+
+    let gravity = 0
     return(
         <>
             
@@ -18,7 +20,7 @@ export function Landing(props) {
                     style={{borderRadius: '20px'}}
                     className="canvas-name"
                 >
-                    <LandingPLanet />
+                    <LandingPLanet props={gravity}/>
                 </Canvas>
                 </div>
                 <div className="right-landing" >
