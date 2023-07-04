@@ -28,12 +28,12 @@ export default function LandingExperience(props) {
                     colliders={ false }
                     // ref={cube}
                     >
-                    <mesh 
+                    {/* <mesh 
                         castShadow
                         >
                         <boxGeometry />
                         <meshStandardMaterial color="red" />
-                    </mesh>
+                    </mesh> */}
                     <CuboidCollider mass={ 30 } args={ [0.5, 0.5, 0.5]} />
                 </RigidBody>
 
