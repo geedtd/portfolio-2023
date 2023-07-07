@@ -12,7 +12,7 @@ const Background = () => {
         background.current.rotation.x = 
         background.current.rotation.y =    
         background.current.rotation.z +=
-            delta * 0.05
+            delta * 0.5
     })
 
     return <>
