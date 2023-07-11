@@ -17,7 +17,7 @@ export function Landing(props) {
                 <Canvas
                     shadows
                     flat 
-                    style={{borderRadius: '20px'}}
+                    style={{borderRadius: '20px', pointerEvents: 'none'}}
                     className="canvas-name"
                 >
                     <LandingPLanet props={gravity}/>
