@@ -11,7 +11,7 @@ export function AboutMeSign(props) {
 <group 
     position={[ -2.3, 6.5, -1]} 
     scale={0.5}
-    rotation={[0,Math.PI * 1.5,0]}
+    // rotation={[0,Math.PI * 1.5,0]}
     >
         <mesh
         geometry={nodes.About_Me_Sign_Border.geometry}
@@ -24,8 +24,8 @@ export function AboutMeSign(props) {
         <mesh
         geometry={nodes.About_Me.geometry}
         material={nodes.About_Me.material}
-        rotation={[Math.PI / 2, 0, 0]}
-        scale={[0.6, 0.29, 0.6]}
+        // rotation={[Math.PI / 2, 0, 0]}
+        // scale={[0.6, 0.29, 0.6]}
         />
     </group>
 

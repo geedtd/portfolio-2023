@@ -1,6 +1,5 @@
-import React from "react";
 import { Canvas, extend } from '@react-three/fiber';
-import { PerspectiveCamera, Sky, Effects } from '@react-three/drei'
+// import { PerspectiveCamera, Sky, Effects } from '@react-three/drei'
 import WorkExperience from "../3DContent/WorkExperience";
 
 

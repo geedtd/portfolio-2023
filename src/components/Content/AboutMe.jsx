@@ -3,6 +3,7 @@ import { Canvas, extend } from '@react-three/fiber'
 import LandingExperience from "../3DContent/LandingExperience";
 import { PerspectiveCamera, Sky, Effects } from '@react-three/drei'
 import LandingTemp from "../3DContent/LandingTemp";
+import { AboutMeSign } from "../3DContent/AboutMeSign";
 
 
 export function AboutMe(props) {

@@ -18,6 +18,7 @@ export function DevPlanet(props) {
         // name.current.position.x = Math.sin(time)/8
         roles.current.rotation.y = (time)/8
         // roles.current.position.x = Math.sin(time)/8
+        orb.current.rotation.y = time/16
         
     })
     console.log(orb)

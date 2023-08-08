@@ -244,8 +244,42 @@ div .Typewriter {
   
 }
 
+.projects {
+  font-family: 'Rubik', sans-serif;
+  display: inline-block;
+  min-width: 90vw;
+  min-height: 30vh;
+  color: white;
+  margin: 3vh auto;
+  border-radius: 20px;
+  position: relative;
+  margin-bottom: 2.5vh;
+}
+
+.projects-container {
+  display: flex;
+}
+
+.project {
+  border: solid 3px black;
+  border-radius: 10px 40px;
+  width: 25vw;
+}
+
+.project img {
+  margin-top: 2vh;
+  width: 23vw;
+  border-radius: 10px;
+  border-color: solid 3px #e3e1b3;
+}
+
+.siteNames {
+  font-size: 3vh;
+  font-weight: 500;
+}
+
 .skills {
-  font-family: 'Rubik';
+  font-family: 'Rubik', sans-serif;
   display: inline-block;
   min-width: 90vw;
   min-height: 30vh;

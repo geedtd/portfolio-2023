@@ -12,7 +12,7 @@ const Background = () => {
         background.current.rotation.x = 
         background.current.rotation.y =    
         background.current.rotation.z +=
-            delta * 0.25
+            delta * 0.125
     })
 
     return <>
@@ -21,7 +21,7 @@ const Background = () => {
             <LayerMaterial side={THREE.BackSide} >
                 <Depth 
                     colorA="blue"
-                    colorB="aquamarine"
+                    colorB="turquoise"
                     alpha={0.75}
                     mode="normal"
                     near={130}
