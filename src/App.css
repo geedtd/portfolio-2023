@@ -247,23 +247,29 @@ div .Typewriter {
 .projects {
   font-family: 'Rubik', sans-serif;
   display: inline-block;
-  min-width: 90vw;
+  min-width: 100%;
   min-height: 30vh;
   color: white;
   margin: 3vh auto;
-  border-radius: 20px;
+  /* border-radius: 20px; */
   position: relative;
   margin-bottom: 2.5vh;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  padding: 5vh 0 5vh 0;
 }
+
+
 
 .projects-container {
   display: flex;
+  justify-content: center;
 }
 
 .project {
   border: solid 3px black;
   border-radius: 10px 40px;
-  width: 25vw;
+  width: 30%;
 }
 
 .project img {
@@ -272,9 +278,20 @@ div .Typewriter {
   border-radius: 10px;
   border-color: solid 3px #e3e1b3;
 }
+img.icons {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  width: auto;
+  border: 0;
+}
+.project a {
+  color: black;
+  margin-bottom: 15vh;
+}
 
 .siteNames {
-  font-size: 3vh;
+  font-size: 2.5vh;
   font-weight: 500;
 }
 

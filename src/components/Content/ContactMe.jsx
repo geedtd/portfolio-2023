@@ -1,8 +1,4 @@
-import React from "react";
-import {FaBeer} from 'react-icons/fa'
-import {BiLogoLinkedin} from 'react-icons/bi'
 import {BsLinkedin, BsGithub, BsFillFileTextFill} from 'react-icons/bs'
-import {FcDocument} from 'react-icons/fc'
 import { Canvas, extend } from '@react-three/fiber'
 import { PerspectiveCamera, Sky, Effects } from '@react-three/drei'
 import MailboxExperience from "../3DContent/MailboxExperience";

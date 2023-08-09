@@ -13,7 +13,7 @@ import { Footer } from './components/Content/Footer'
 // extend ({UnrealBloomPass})
 import BackgroundLeva from './components/3DContent/BackgroundLeva'
 import { Landing } from './components/Content/Landing'
-import { Porjects } from './components/Content/Projects'
+import { Projects } from './components/Content/Projects'
 // import Nav from './components/3DContent/Nav'
 // import LandingTemp from './components/3DContent/LandingTemp'
 // import Experience from './components/3DContent/Experience'
@@ -46,7 +46,7 @@ function App() {
       <div className='content'>
         <AboutMe style={{display: 'flex', justifyContent: 'center',}}/>
         <Work className='glass'/>
-        {/* <Porjects /> */}
+        <Projects />
         <ContactMe />
         <Footer />
       </div>

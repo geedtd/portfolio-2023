@@ -5,6 +5,7 @@ export function Footer(props) {
 
     return(
         <>
+            <p>Gerardo Cazares - Creative Programmer</p>
             <ScrollToTopButton />
         </>
     )
