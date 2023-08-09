@@ -15,7 +15,7 @@ export function Projects(props) {
                     <div className="project" style={{margin: "10px"}}>
                         <img src="/customizationSite.png" alt="an img" />
                         <p className="siteNames">R3F Customization</p>
-                        <a href="http://https://r3f-customizer.vercel.app/">
+                        <a href="https://r3f-customizer.vercel.app/">
                             Website Link
                         </a>
                         <p style={{ textDecoration: "underline"}}>Technologies Used</p>

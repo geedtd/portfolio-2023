@@ -2,6 +2,7 @@ import {BsLinkedin, BsGithub, BsFillFileTextFill} from 'react-icons/bs'
 import { Canvas, extend } from '@react-three/fiber'
 import { PerspectiveCamera, Sky, Effects } from '@react-three/drei'
 import MailboxExperience from "../3DContent/MailboxExperience";
+import { Buzon } from '../3DContent/Buzon';
 
 
 export function ContactMe(props) {
@@ -36,10 +37,12 @@ export function ContactMe(props) {
                     shadows
                     flat 
                     style={{borderRadius: '20px'}}
+                    
                 >
-                    <PerspectiveCamera makeDefault  position={[-1, 1,-1]} maxPolarAngle={ Math.Pi * 0.5} />
+                    {/* <PerspectiveCamera makeDefault  position={[0, 0.5, 4]} maxPolarAngle={ Math.Pi * 0.5} /> */}
                     {/* <Suspense fallback={<Loader/>}> */}
                     <MailboxExperience />
+                    {/* <Buzon /> */}
                 </Canvas>
                 </div>
             </div>
