@@ -46,7 +46,7 @@ function App() {
       <div className='content'>
         <AboutMe style={{display: 'flex', justifyContent: 'center',}}/>
         <Work className='glass'/>
-        <Projects />
+        {/* <Projects /> */}
         <ContactMe />
         <Footer />
       </div>
