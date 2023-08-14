@@ -25,10 +25,11 @@ export default function MailboxExperience() {
                     <Text
                         font="/Bangers-Regular.ttf"
                         position={[0,1,2.6]}
+                        scale={0.5}
                     >
                         Let's Connect
                     </Text>
-                    <Html
+                    {/* <Html
                         transform
                         occlude
                         scale={0.125}
@@ -37,7 +38,7 @@ export default function MailboxExperience() {
                         // distanceFactor={7}
                     >
                         <img className='icons' src="/react.png" alt="react-icon" style={{height: "5%", width: "auto", objectFit: "contain"}} />
-                    </Html>
+                    </Html> */}
                 </Float>
             </PresentationControls>
             
