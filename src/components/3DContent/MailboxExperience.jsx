@@ -1,4 +1,4 @@
-import { OrbitControls, Center,Environment, PresentationControls, Float, ContactShadows } from "@react-three/drei";
+import { OrbitControls, Center,Environment, PresentationControls, Float, ContactShadows, Text, Html } from "@react-three/drei";
 import { Mailbox } from "./Mailbox";
 import { Buzon } from "./Buzon";
 
@@ -22,6 +22,22 @@ export default function MailboxExperience() {
             >
                 <Float floatIntensity={0.7}>
                     <Buzon />
+                    <Text
+                        font="/Bangers-Regular.ttf"
+                        position={[0,1,2.6]}
+                    >
+                        Let's Connect
+                    </Text>
+                    <Html
+                        transform
+                        occlude
+                        scale={0.125}
+                        position={[0,0,1.9]}
+                        rotation={[0.4, -0.5, 0]}
+                        // distanceFactor={7}
+                    >
+                        <img className='icons' src="/react.png" alt="react-icon" style={{height: "5%", width: "auto", objectFit: "contain"}} />
+                    </Html>
                 </Float>
             </PresentationControls>
             
@@ -30,7 +46,6 @@ export default function MailboxExperience() {
                 opacity={0.5}
                 scale={4}
             />
-            
         </>
     );
 }

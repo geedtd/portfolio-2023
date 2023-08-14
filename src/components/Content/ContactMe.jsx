@@ -13,7 +13,7 @@ export function ContactMe(props) {
                 {/* left side */}
                 <div className="contact-text" > 
                     <h2 className="title">
-                        Contact Me 
+                        Links 
                     </h2>
                     <a href="https://www.linkedin.com/in/gerardocazares/">
                         <h2>

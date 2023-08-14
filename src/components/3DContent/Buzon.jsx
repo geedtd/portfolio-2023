@@ -44,8 +44,8 @@ export function Buzon(props) {
         <mesh
             geometry={nodes.Plane.geometry}
             material={nodes.Plane.material}
-            position={[-0.14, 1.35, 2.12]}
-            rotation={[1.6, 0, Math.PI/5]}
+            position={[-0.24, 1.45, 2.0]}
+            rotation={[1.88, 0.1, Math.PI/6]}
             scale={[-0.33, -0.59, -0.44]}
         />
         </group>
