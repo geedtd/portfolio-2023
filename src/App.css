@@ -133,6 +133,11 @@
 .contact-canvas {
   height: 40vh;
   width: 50vw;
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  overflow: hidden;
+
 }
 
 .content {

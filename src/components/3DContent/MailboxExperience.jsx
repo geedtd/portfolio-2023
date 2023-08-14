@@ -25,7 +25,7 @@ export default function MailboxExperience() {
                     <Text
                         font="/Bangers-Regular.ttf"
                         position={[0,1,2.6]}
-                        scale={0.5}
+                        scale={0.65}
                     >
                         Let's Connect
                     </Text>
