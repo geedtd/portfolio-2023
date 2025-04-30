@@ -12,7 +12,7 @@ export function Landing(props) {
     return(
         <>
             
-            <div className="landing clear" >
+            {/* <div className="landing clear" >
                 <div className="left-landing" >
                 <Canvas
                     shadows
@@ -42,7 +42,7 @@ export function Landing(props) {
                         }}
                     />
                 </div>
-            </div>
+            </div> */}
         </>
     )
 }

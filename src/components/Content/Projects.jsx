@@ -1,4 +1,7 @@
 import {BiLogoReact} from 'react-icons/bi'
+import { Portals2 } from '../3DContent/Portals2'
+import { Canvas } from '@react-three/fiber'
+
 
 export function Projects(props) {
 
@@ -7,7 +10,12 @@ export function Projects(props) {
 
     return(
         <>
-            <div className="projects "   >
+            <div className="projects">
+                <Canvas>
+                    <Portals2 />
+                </Canvas>
+            </div>
+            {/* <div className="projects "   >
                     <h2 className="title" style={{textAlign: "center"}}>
                         Projects
                     </h2>
@@ -31,7 +39,7 @@ export function Projects(props) {
                     </div>
                     </div>
                     
-                </div>
+                </div> */}
             
         </>
     )

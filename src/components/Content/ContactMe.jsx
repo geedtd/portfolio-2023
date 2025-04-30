@@ -9,12 +9,12 @@ export function ContactMe(props) {
 
     return(
         <>
-            <div className="contact-me glass-dark" >
+            <div className="contact-me " >
                 {/* left side */}
                 <div className="contact-text" > 
-                    <h2 className="title">
+                    {/* <h2 className="title">
                         Links 
-                    </h2>
+                    </h2> */}
                     <a href="https://www.linkedin.com/in/gerardocazares/">
                         <h2>
                             LinkedIn <BsLinkedin />
@@ -25,7 +25,7 @@ export function ContactMe(props) {
                             Github  <BsGithub />
                         </h2>
                     </a>
-                    <a href="https://docs.google.com/document/d/1bY3mQmCUnC34dEAiCSbyKI93_ljXF2W5AX9yLOZ7S-Q/edit?usp=sharing">
+                    <a href="https://docs.google.com/document/d/1r9fsGwWubKrv1yLcoQFUiwS8nW5x0tCRdD4gHTQPQg8/edit?usp=sharing">
                         <h2>
                             Resume <BsFillFileTextFill />
                         </h2>

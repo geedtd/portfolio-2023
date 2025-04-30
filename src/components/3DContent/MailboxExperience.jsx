@@ -24,7 +24,7 @@ export default function MailboxExperience() {
                     <Buzon />
                     <Text
                         font="/Bangers-Regular.ttf"
-                        position={[0,1,2.6]}
+                        position={[0,-0.2,1.6]}
                         scale={0.65}
                     >
                         Let's Connect

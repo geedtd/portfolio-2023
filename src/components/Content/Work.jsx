@@ -5,11 +5,11 @@ import WorkExperience from "../3DContent/WorkExperience";
 
 export function Work(props) {
 
-    let skillsArr = ['JavaScript', 'REST API Creation',  'React', 'threeJS', 'R3F', 'Project Management', ' Fluent in English and Spanish', 'TypeScript', 'Custom Hooks', 'Git/Version Control',  'Third Party API Integration', 'Python',  'Node.js',  'MongoDB', 'HTML', 'CSS', 'SQL', 'Express', 'Django',  'Docker', 'AWS'  , 'WebGL', 'Blender',
+    let skillsArr = ['JavaScript', 'REST API Creation',  'React', 'threeJS', 'R3F', 'Project Management', ' Fluent in Spanish', 'TypeScript', 'Custom Hooks', 'Git/Version Control',  'Third Party API Integration', 'Python',  'Node.js',  'MongoDB', 'HTML', 'CSS', 'SQL', 'Express', 'Django',  'Docker', 'AWS'  , 'WebGL', 'Blender',
     ]
 
     return(
-        <>
+        
             <div className="skills "   >
                 <div className="skills-canvas" style={{  borderRadius: '20px',  padding: '10px'}}>
                     <Canvas
@@ -21,10 +21,10 @@ export function Work(props) {
                             <WorkExperience />
                     </Canvas>
                 </div>
-                <div className="skills-text glass-dark" >
-                    <h2 className="title">
+                <div className="skills-text glass-mid" >
+                    <h1 className="title">
                         Skills
-                    </h2>
+                    </h1>
                     <ul className="skill-list">
                         {skillsArr.map((skill, index) => (
                             <li key={index}>{skill}</li>
@@ -33,6 +33,6 @@ export function Work(props) {
                     
                 </div>
             </div>
-        </>
+        
     )
 }

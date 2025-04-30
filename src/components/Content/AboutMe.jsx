@@ -9,26 +9,20 @@ import { AboutMeSign } from "../3DContent/AboutMeSign";
 export function AboutMe(props) {
 
     return(
-        <>
-            <div className="about-me glass-dark" >
+    
+            <div className="about-me " id="about-me">
                 <div  style={{ flex: 1, }}>
                     <h1 className="title">
                         About Me 
                     </h1>
                     <p>
-                    Hello! I'm Gerardo Cazares, a passionate web developer with a knack for incorporating captivating 3D elements into web design. With a background in hospitality and a strong curiosity to uncover how things work, I bring a unique perspective to my development projects.
-                    </p>
-                    <p>
-                    My love for blending technology and creativity led me to explore the world of 3D elements in web design. By seamlessly integrating these elements into the digital realm, I aim to bring a sense of depth, interactivity, and immersion to websites, providing users with an unforgettable online experience.
-                    </p>
-                    <p>
-                    If you're looking for a web developer who can bring your ideas to life, create immersive experiences, and deliver exceptional results, I would love to collaborate with you. Let's work together to build a better web presence that stands out, fosters engagement, and captivates your audience.
+                    Creative and detail-oriented Frontend Developer with extensive experience delivering high-impact web experiences for global audiences. I contributed to the multi-locale relaunch of the Google App website, enhancing user engagement across seven international markets and earning a 2024 Webby Award nomination. I also led frontend development on website refreshes for Amazon Prime projects, including Thursday Night Football (TNF) and UEFA on Prime for Europe, optimizing performance and launching new features for platforms reaching millions of users. Additionally, I spearheaded maintenance and content updates for the Amazon Bloomberg Green Festival 2024 website, supporting over 13,000 attendees during a high-profile event. These are just a few highlights from my broader body of work building scalable, accessible, and user-centered digital experiences.
                     </p>
                 </div>
 
                 
             </div>
-        </>
+        
     )
 }
 

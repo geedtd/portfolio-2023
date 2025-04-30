@@ -38,13 +38,13 @@ export function Buzon(props) {
         <mesh
             geometry={nodes.Mailbox.geometry}
             material={materials["Material.010"]}
-            position={[0.0, 0.2, 1]}
+            position={[0.0, 0.2, 0]}
             rotation={[0.4, -0.5, 0]}
         />
         <mesh
             geometry={nodes.Plane.geometry}
             material={nodes.Plane.material}
-            position={[-0.24, 1.45, 2.0]}
+            position={[-0.24, 1.45, 1.0]}
             rotation={[1.88, 0.1, Math.PI/6]}
             scale={[-0.33, -0.59, -0.44]}
         />

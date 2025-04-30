@@ -1,10 +1,26 @@
 #root {
-  max-width: 2560px;
+  /* max-width: 2560px; */
   margin: auto;
   
   text-align: center;
   /* background: rgb(117, 167, 202); */
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: 'OpenSansMedium';
+  src: url('/OpenSans-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+body {
+  font-family: 'OpenSansMedium', sans-serif;
+}
+
 
 .App {
   width: 100%;
@@ -31,22 +47,49 @@
     animation: logo-spin infinite 20s linear;
   }
 }
+.nav {
+  margin-top: 2vh;
+}
+.nav-elements {
+  display: flex;
+  text-align: left;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-elements h1, h2 {
+  color: black;
+}
+
+.nav-right {
+  display: flex;
+  justify-content: space-between;
+  
+}
+.nav-right h2 {
+  padding: 0 1rem;
+  
+}
+
+.nav-elements .display-small {
+  display: none;
+}
 
 .about-me {
   display: flex;
   max-width: 90vw;
   min-height: 40vh;
-  background: white;
+  background: #F8F8FF;
   color: black;
-  margin: 4vh auto 4vh;
+  margin: 4vh auto 5vh;
   border-radius: 20px;
 }
 
-.about-me h2 {
+.about-me h1 {
   font-family: 'Inter', sans-serif;
+  text-align: left;
   font-size: 4vh;
   font-weight: 500;
-  margin: 3vh 3vw;
+  margin: 3vh 6vw;
 }
 
 .about-me p {
@@ -54,6 +97,7 @@
   font-size: 2.2vh;
   font-weight: 500;
   margin: 4vh 6vw;
+  text-align: left;
 }
 
 .canvas-bg {
@@ -122,7 +166,15 @@
 }
 
 .contact-text {
-  margin: 5vw auto;
+  margin-left: 20vw;
+  justify-content: center;
+  align-content: center;
+}
+
+.contact-text a:hover {
+  
+    filter: drop-shadow(0 0 2em #070931aa);
+  
 }
 
 .contact-me .text {
@@ -166,6 +218,14 @@
 
 .glass-dark {
   background: linear-gradient(135deg, rgba(36, 36, 36, 0.2), rgba(19, 19, 19, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1.2px solid rgba(254, 254, 254, 0.25 );
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.35);
+}
+.glass-mid {
+  background: linear-gradient(135deg, rgba(246, 245, 245, 0.6), rgba(100, 99, 99, 0.3));
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-radius: 20px;
@@ -253,7 +313,7 @@ div .Typewriter {
   font-family: 'Rubik', sans-serif;
   display: inline-block;
   min-width: 100%;
-  min-height: 30vh;
+  min-height: 40vh;
   color: white;
   margin: 3vh auto;
   /* border-radius: 20px; */
@@ -262,6 +322,10 @@ div .Typewriter {
   border-top: 2px solid black;
   border-bottom: 2px solid black;
   padding: 5vh 0 5vh 0;
+}
+
+.projects canvas {
+  height: 50vh;
 }
 
 
@@ -301,7 +365,7 @@ img.icons {
 }
 
 .skills {
-  font-family: 'Rubik', sans-serif;
+  /* font-family: 'Rubik', sans-serif; */
   display: inline-block;
   min-width: 90vw;
   min-height: 30vh;
@@ -309,7 +373,12 @@ img.icons {
   margin: 3vh auto;
   border-radius: 20px;
   position: relative;
-  margin-bottom: 25vh;
+  margin-bottom: 20vh;
+  padding-top: 3vh;
+}
+
+.skills h1 {
+  padding-left: 3vw;
 }
 
 .skills .skills-text, .skills-canvas {
@@ -333,9 +402,9 @@ img.icons {
 
 .skills .skills-canvas {
   height: 135%;
-    width: 89%;
-    top: 1vh;
-    right: -213px;
+  width: 87%;
+  top: 1vh;
+  right: -213px;
   z-index: 2;
 }
 
@@ -347,10 +416,120 @@ img.icons {
   font-size: 2vh;
 }
 
+.carousel {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+.carousel-image {
+  width: 100%;
+  height: auto;
+  max-height: 20rem;           
+  border-radius: 12px;
+  object-fit: cover;
+  object-position: top;        
+}
+
+.carousel-title {
+  text-align: left;
+  font-size: 3rem;
+  padding-left: 6vw;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  width: 6rem;
+  height: 6rem;
+  font-size: 5px;
+}
+
 @media (max-width: 1100px) {
+  .nav {
+    margin-top: 0vh;
+  }
+  .nav-elements {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    
+  }
+  .nav-elements .display-small {
+    text-align: left;
+    display: flex;
+  }
+
+  .nav-left {
+    margin-top: 2vh;
+    margin-left: 2vw;
+  }
+  .nav-right {
+    display: none;
+  }
+  .nav-elements h1, h2 {
+    color: black;
+  }
+  .nav-elements h1 {
+    font-size: 1.5rem;
+  }
+  .nav-elements h2 {
+    font-size: 1.0rem;
+    text-align: left;
+  }
+  .nav-btn {
+    display: none;
+  }
+
+  .about-me .title {
+    padding-top: 3vh;
+  }
+
+  .about-me p {
+    font-size: 1rem;
+    text-align: left;
+    padding-bottom: 3vh;
+  }
+  .skills {
+    margin-bottom: 35vh;
+  }
   .skill-list {
     columns: 2;
   }
+  .contact-text {
+    margin-left: 0vw;
+    margin-top: 4vh;
+    justify-content: center;
+    align-content: center;
+  }
+  .contact-me {
+    flex-direction: column;
+  }
+  .contact-canvas {
+    height: 40vh;
+    width: 90vw;
+  }
+
+  .carousel-image {
+    max-height: 17.3rem;         
+  }
+
+  .carousel-title {
+    text-align: left;
+    font-size: 1.8rem;
+    padding-left: 3vw;
+  }
+
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    width: 2rem;
+    height: 6rem;
+    font-size: 16px;
+  }
+
+  .skills h1 {
+    padding-left: 6vw;
+    font-size: 2.5rem;
+  }
+
 }
 
 @media (max-width:1000px) {
@@ -359,7 +538,7 @@ img.icons {
   }
   .contact-canvas {
     height: 40vh;
-    width: 80vw;
+    width: 90vw;
   }
   
   .landing {
@@ -384,6 +563,7 @@ img.icons {
     height: 100%;
     margin-bottom: 35vh;
   }
+
   .skills .skills-canvas {
     height: 60%;
     width: 57%;

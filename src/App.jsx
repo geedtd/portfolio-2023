@@ -4,6 +4,7 @@ import { Canvas, extend } from '@react-three/fiber'
 import { ReactDOM } from 'react-dom/client'
 import { PerspectiveCamera, Sky, Effects } from '@react-three/drei'
 import { AboutMe } from './components/Content/AboutMe'
+import { Nav } from './components/Content/Nav'
 import LandingExperience from './components/3DContent/LandingExperience'
 import { Work } from './components/Content/Work'
 import { ContactMe } from './components/Content/ContactMe'
@@ -14,6 +15,7 @@ import { Footer } from './components/Content/Footer'
 import BackgroundLeva from './components/3DContent/BackgroundLeva'
 import { Landing } from './components/Content/Landing'
 import { Projects } from './components/Content/Projects'
+import { MyWork } from './components/Content/MyWork'
 // import Nav from './components/3DContent/Nav'
 // import LandingTemp from './components/3DContent/LandingTemp'
 // import Experience from './components/3DContent/Experience'
@@ -40,19 +42,21 @@ function App() {
             </Effects> */}
           </Canvas>
         </div>
+      <div className='content'>
+      <div className='nav'>
+        <Nav />
+      </div>
       <div className="landing">        
         <Landing />
       </div>
-      <div className='content'>
         <AboutMe style={{display: 'flex', justifyContent: 'center',}}/>
+        <MyWork />
         <Work className='glass'/>
         {/* <Projects /> */}
+
         <ContactMe />
         <Footer />
       </div>
-
-        
-        
     </div>
 
   );
