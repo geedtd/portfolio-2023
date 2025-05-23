@@ -12,7 +12,7 @@ export function Landing(props) {
     return(
         <>
             
-            {/* <div className="landing clear" >
+            <div className="landing clear" >
                 <div className="left-landing" >
                 <Canvas
                     shadows
@@ -23,7 +23,7 @@ export function Landing(props) {
                     <LandingPLanet props={gravity}/>
                 </Canvas>
                 </div>
-                <div className="right-landing" >
+                {/* <div className="right-landing" >
                     <h2 className="title">
                         Welcome to my Portfolio  <br /> I am a ... 
                     </h2>
@@ -41,8 +41,8 @@ export function Landing(props) {
                             
                         }}
                     />
-                </div>
-            </div> */}
+                </div> */}
+            </div>
         </>
     )
 }

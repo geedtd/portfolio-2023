@@ -21,9 +21,15 @@ export function Nav(props) {
                         Featured Work
                     </a>
                 </h2>
-                    <h2>Skills</h2>
+                <h2 style={{ cursor: 'pointer' }}>
+                    <a href="#skills" style={{ textDecoration: 'none', color: 'inherit' }}>
+                        Skills
+                    </a>
+                </h2>
                 </div>
-                <button className='nav-btn'>Contact Me</button>
+                <button className='nav-btn' onClick={() => {
+                document.querySelector('.contact-me').scrollIntoView({ behavior: 'smooth' });
+                }}>Contact Me</button>
             </div>
         
     )

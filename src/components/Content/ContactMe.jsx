@@ -9,7 +9,7 @@ export function ContactMe(props) {
 
     return(
         <>
-            <div className="contact-me " >
+            <div className="contact-me" >
                 {/* left side */}
                 <div className="contact-text" > 
                     {/* <h2 className="title">

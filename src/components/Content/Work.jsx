@@ -10,7 +10,7 @@ export function Work(props) {
 
     return(
         
-            <div className="skills "   >
+            <div className="skills" id='skills'>
                 <div className="skills-canvas" style={{  borderRadius: '20px',  padding: '10px'}}>
                     <Canvas
                         shadows

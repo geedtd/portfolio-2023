@@ -194,6 +194,7 @@ body {
 
 .content {
   width: 90vw;
+  /* margin-top: 100vh; */
 }
 
 .footer {
@@ -234,7 +235,8 @@ body {
 }
 
 .landing {
-  margin-top: 5vh;
+  margin-top: -5vh;
+  margin-bottom: -5vh;
   /* border: 1px solid black; */
   display: flex;
   min-height: 60vh;
@@ -247,7 +249,8 @@ body {
 }
 
 .left-landing{
-  width: 50vw;
+  width: 85vw;
+  height: 90vh;
   z-index: 10;
 }
 
@@ -518,6 +521,16 @@ img.icons {
     padding-left: 3vw;
   }
 
+  .left-landing {
+    /* display: block; */
+    margin-right: 0vw;
+    width: 120vw;
+    height: 50vh;
+    margin: -20vw;
+    margin-top: 10vh;
+    margin-bottom: 7vh;
+  }
+
   .swiper-button-next::after,
   .swiper-button-prev::after {
     width: 2rem;
@@ -541,14 +554,17 @@ img.icons {
     width: 90vw;
   }
   
-  .landing {
-    display: block;
+  .left-landing {
+    /* display: block; */
+    margin-right: 0vw;
+    width: 120vw;
+    height: 50vh;
+    margin: -20vw;
+    margin-top: 10vh;
+    margin-bottom: 7vh;
   }
 
-  .left-landing {
-    width: 90vw;
-    height: 45vh;
-  }
+  
   .right-landing {
     margin-top: 2vh;
     width: 90vw;
